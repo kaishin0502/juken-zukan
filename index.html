@@ -2004,7 +2004,8 @@ const IMG_MAP = {
   "まんねんひつ": "mannenhitsu",
   "なべ": "nabe", "フライパン": "furaipan", "おたま": "otama",
   "しゃもじ": "shamoji", "めんぼう": "menbou", "ざる": "zaru",
-"すりこぎ": "surikogi", "すりばち": "suribachi", "ポット": "potto",
+  "すりこぎ": "surikogi", "すりばち": "suribachi", "ポット": "potto",
+  "はかり": "hakari", "せんたくばさみ": "sentakubasami",
 };
 
 
@@ -2193,6 +2194,8 @@ const DATA = [
   { name: "すりこぎ", season: "winter", category: "tool", hint: "", romaji: "surikogi" },
   { name: "すりばち", season: "winter", category: "tool", hint: "", romaji: "suribachi" },
   { name: "ポット", season: "winter", category: "tool", hint: "", romaji: "potto" },
+  { name: "はかり", season: "autumn", category: "tool", hint: "", romaji: "hakari" },
+  { name: "せんたくばさみ", season: "summer", category: "tool", hint: "", romaji: "sentakubasami" },
 ];
 
 const SEASONS = [
@@ -3731,7 +3734,7 @@ function submitNakamawake() {
 // 白黒PNG対応済み
 const PNG_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","omochitsuki","furin"]);
 // カラーPNG対応済み
-const COLOR_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","ayame","fuji","hasu","dahlia","sazanka","poinsettia","kamakiri","dangomushi","katatsumuri","kumo","amenbo","tamanegi","kabocha","nashi","biwa","gobou","kabu","shiitake","asparagus","chichinohi","omochitsuki","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","furin","senpuki","shimekazari","hotchikisu","houijishaku","jouro","raitaa","matchi","sensu","katorisenko","kokeshi","penchi","chiritori","kattaa","airon","mishin","mannenhitsu","nabe","furaipan","otama","shamoji","menbou","zaru","surikogi","suribachi","potto"]);
+const COLOR_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","ayame","fuji","hasu","dahlia","sazanka","poinsettia","kamakiri","dangomushi","katatsumuri","kumo","amenbo","tamanegi","kabocha","nashi","biwa","gobou","kabu","shiitake","asparagus","chichinohi","omochitsuki","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","furin","senpuki","shimekazari","hotchikisu","houijishaku","jouro","raitaa","matchi","sensu","katorisenko","kokeshi","penchi","chiritori","kattaa","airon","mishin","mannenhitsu","nabe","furaipan","otama","shamoji","menbou","zaru","surikogi","suribachi","potto","hakari","sentakubasami"]);
 
 // 白黒SVG対応済み（PNGがないがSVGがあるもの）
 const SVG_READY = new Set(["ayame","fuji","hasu","dahlia","sazanka","poinsettia","kamakiri","dangomushi","katatsumuri","kumo","amenbo","tamanegi","kabocha","nashi","biwa","gobou","kabu","shiitake","asparagus","chichinohi"]);
