@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- cherry blossom - 5 petals with notches -->
+  <path d="M50 38 C48 30 42 22 44 18 C46 16 48 20 50 26 C52 20 54 16 56 18 C58 22 52 30 50 38Z"/>
+  <path d="M50 38 C56 34 64 32 66 28 C67 26 64 26 60 30 C62 25 61 22 58 22 C55 24 56 32 50 38Z"/>
+  <path d="M50 38 C55 42 60 48 62 52 C63 55 60 53 57 48 C59 52 57 56 54 56 C52 54 52 46 50 38Z"/>
+  <path d="M50 38 C45 42 40 48 38 52 C37 55 40 53 43 48 C41 52 43 56 46 56 C48 54 48 46 50 38Z"/>
+  <path d="M50 38 C44 34 36 32 34 28 C33 26 36 26 40 30 C38 25 39 22 42 22 C45 24 44 32 50 38Z"/>
+  <circle cx="50" cy="38" r="4" stroke-width="1"/>
+  <circle cx="48" cy="36" r="0.8" fill="#333"/>
+  <circle cx="52" cy="36" r="0.8" fill="#333"/>
+  <circle cx="50" cy="40" r="0.8" fill="#333"/>
+  <!-- stem and leaves -->
+  <path d="M50 48 L50 82"/>
+  <path d="M50 60 C44 56 36 56 32 60" stroke-width="1.2"/>
+  <path d="M32 60 C36 58 40 58 44 60" stroke-width="1"/>
+  <path d="M50 70 C56 66 64 66 68 70" stroke-width="1.2"/>
+  <path d="M68 70 C64 68 60 68 56 70" stroke-width="1"/>
+</svg>

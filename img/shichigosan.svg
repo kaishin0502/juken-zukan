@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Shichi-Go-San - child in kimono with chitose-ame -->
+  <!-- head -->
+  <circle cx="50" cy="22" r="11"/>
+  <!-- hair with ornament -->
+  <path d="M39 18 C39 12 44 8 50 8 C56 8 61 12 61 18" stroke-width="2"/>
+  <circle cx="58" cy="14" r="3"/><circle cx="58" cy="14" r="1.5" fill="#333"/>
+  <!-- face -->
+  <circle cx="46" cy="22" r="1.5" fill="#333"/>
+  <circle cx="54" cy="22" r="1.5" fill="#333"/>
+  <path d="M47 26 Q50 28 53 26" stroke-width="0.8"/>
+  <!-- kimono body -->
+  <path d="M38 32 L38 76 L62 76 L62 32"/>
+  <!-- kimono collar (V-shape) -->
+  <path d="M38 32 L50 50 L62 32"/>
+  <path d="M40 34 L50 48"/>
+  <!-- obi (sash) -->
+  <rect x="38" y="52" width="24" height="8" rx="1"/>
+  <!-- obi bow -->
+  <ellipse cx="62" cy="56" rx="6" ry="4"/>
+  <ellipse cx="62" cy="56" rx="3" ry="2"/>
+  <!-- kimono pattern -->
+  <circle cx="44" cy="42" r="1.5" stroke-width="0.8"/>
+  <circle cx="56" cy="66" r="1.5" stroke-width="0.8"/>
+  <circle cx="44" cy="70" r="1.5" stroke-width="0.8"/>
+  <!-- feet/zori -->
+  <path d="M42 76 L42 80 M46 76 L46 80 M54 76 L54 80 M58 76 L58 80" stroke-width="1.5"/>
+  <!-- chitose-ame bag (千歳飴) -->
+  <path d="M28 40 L28 78 L20 78 L20 40Z"/>
+  <!-- bag text suggestion -->
+  <path d="M22 50 L26 50 M22 56 L26 56 M22 62 L26 62" stroke-width="0.8"/>
+  <!-- candy stick coming out -->
+  <path d="M24 40 L24 30" stroke-width="2.5"/>
+  <circle cx="24" cy="28" r="2"/>
+  <!-- torii gate suggestion -->
+  <path d="M76 60 L76 86 M88 60 L88 86" stroke-width="2"/>
+  <path d="M73 60 L91 60" stroke-width="2.5"/>
+  <path d="M74 66 L90 66" stroke-width="1.5"/>
+</svg>

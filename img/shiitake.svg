@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- shiitake mushroom - dome cap with crack pattern, stem -->
+  <!-- cap -->
+  <path d="M14 52 C14 30 30 14 50 14 C70 14 86 30 86 52 L14 52 Z"/>
+  <!-- cap rim (slightly curled) -->
+  <path d="M14 52 C14 56 16 58 20 58 C30 58 40 56 50 56 C60 56 70 58 80 58 C84 58 86 56 86 52"/>
+  <!-- crack patterns on cap -->
+  <path d="M40 20 C38 28 36 36 34 44" stroke-width="1" opacity="0.5"/>
+  <path d="M60 22 C62 30 64 38 66 46" stroke-width="1" opacity="0.5"/>
+  <path d="M50 16 C50 24 50 34 50 46" stroke-width="1" opacity="0.5"/>
+  <path d="M30 28 C28 36 26 44 26 50" stroke-width="1" opacity="0.5"/>
+  <path d="M70 28 C72 36 74 44 74 50" stroke-width="1" opacity="0.5"/>
+  <!-- cross cracks -->
+  <path d="M36 32 L44 30" stroke-width="0.8" opacity="0.4"/>
+  <path d="M56 34 L64 32" stroke-width="0.8" opacity="0.4"/>
+  <path d="M42 44 L48 42" stroke-width="0.8" opacity="0.4"/>
+  <!-- gills (under cap) -->
+  <path d="M30 56 L34 62" stroke-width="0.8" opacity="0.4"/>
+  <path d="M38 56 L40 64" stroke-width="0.8" opacity="0.4"/>
+  <path d="M46 56 L46 66" stroke-width="0.8" opacity="0.4"/>
+  <path d="M54 56 L54 66" stroke-width="0.8" opacity="0.4"/>
+  <path d="M62 56 L60 64" stroke-width="0.8" opacity="0.4"/>
+  <path d="M70 56 L66 62" stroke-width="0.8" opacity="0.4"/>
+  <!-- stem -->
+  <path d="M42 58 C40 66 40 76 42 86 C44 90 56 90 58 86 C60 76 60 66 58 58"/>
+</svg>

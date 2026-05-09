@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- dangomushi (pill bug/roly-poly) - segmented oval body -->
+  <!-- body outline -->
+  <ellipse cx="50" cy="50" rx="30" ry="20"/>
+  <!-- head -->
+  <path d="M20 50 C18 44 18 40 22 38 C26 36 30 38 30 42"/>
+  <!-- segments -->
+  <path d="M30 32 L30 68" stroke-width="1.2"/>
+  <path d="M38 30 L38 70" stroke-width="1.2"/>
+  <path d="M46 30 L46 70" stroke-width="1.2"/>
+  <path d="M54 30 L54 70" stroke-width="1.2"/>
+  <path d="M62 31 L62 69" stroke-width="1.2"/>
+  <path d="M70 34 L70 66" stroke-width="1.2"/>
+  <!-- antennae -->
+  <path d="M22 40 C18 34 14 30 10 28" stroke-width="1.2"/>
+  <path d="M24 38 C22 32 20 28 18 24" stroke-width="1.2"/>
+  <!-- tiny eyes -->
+  <circle cx="22" cy="44" r="1.5" fill="#333"/>
+  <!-- tiny legs underneath -->
+  <path d="M30 68 L28 74" stroke-width="1"/>
+  <path d="M38 70 L36 76" stroke-width="1"/>
+  <path d="M46 70 L44 76" stroke-width="1"/>
+  <path d="M54 70 L52 76" stroke-width="1"/>
+  <path d="M62 69 L60 75" stroke-width="1"/>
+  <path d="M70 66 L68 72" stroke-width="1"/>
+  <path d="M30 32 L28 26" stroke-width="1"/>
+  <path d="M38 30 L36 24" stroke-width="1"/>
+  <path d="M46 30 L44 24" stroke-width="1"/>
+  <path d="M54 30 L52 24" stroke-width="1"/>
+  <path d="M62 31 L60 25" stroke-width="1"/>
+  <path d="M70 34 L68 28" stroke-width="1"/>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- honeybee -->
+  <!-- head -->
+  <circle cx="34" cy="48" r="10"/>
+  <circle cx="30" cy="46" r="2" fill="#333"/>
+  <circle cx="38" cy="46" r="2" fill="#333"/>
+  <!-- antennae -->
+  <path d="M30 40 C26 32 22 28 20 26"/>
+  <path d="M38 40 C38 32 36 28 34 24"/>
+  <!-- body (striped abdomen) -->
+  <ellipse cx="58" cy="48" rx="20" ry="14"/>
+  <!-- stripes -->
+  <path d="M46 40 C48 46 48 52 46 56" stroke-width="2"/>
+  <path d="M52 38 C54 44 54 52 52 58" stroke-width="2"/>
+  <path d="M58 37 C60 44 60 52 58 59" stroke-width="2"/>
+  <path d="M64 38 C66 44 66 52 64 58" stroke-width="2"/>
+  <!-- wings -->
+  <path d="M48 38 C44 26 50 18 58 20 C64 22 62 30 56 36" stroke-width="1.2"/>
+  <path d="M56 36 C56 26 62 20 68 22 C72 24 70 30 64 36" stroke-width="1.2"/>
+  <!-- stinger -->
+  <path d="M78 48 L84 48"/>
+  <!-- legs -->
+  <path d="M44 56 C40 62 38 66 36 70" stroke-width="1.2"/>
+  <path d="M52 58 C50 64 48 68 46 72" stroke-width="1.2"/>
+  <path d="M62 58 C62 64 60 68 58 72" stroke-width="1.2"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- hydrangea - cluster of small 4-petal flowers -->
+  <!-- dome of small flowers -->
+  <path d="M38 22 C36 18 38 16 42 18 C44 16 46 18 44 22 C46 22 44 24 40 24 C38 24 36 22 38 22Z" stroke-width="1"/>
+  <path d="M46 18 C44 14 46 12 50 14 C52 12 54 14 52 18 C54 18 52 20 48 20 C46 20 44 18 46 18Z" stroke-width="1"/>
+  <path d="M54 20 C52 16 54 14 58 16 C60 14 62 16 60 20 C62 20 60 22 56 22 C54 22 52 20 54 20Z" stroke-width="1"/>
+  <path d="M34 28 C32 24 34 22 38 24 C40 22 42 24 40 28 C42 28 40 30 36 30 C34 30 32 28 34 28Z" stroke-width="1"/>
+  <path d="M42 26 C40 22 42 20 46 22 C48 20 50 22 48 26 C50 26 48 28 44 28 C42 28 40 26 42 26Z" stroke-width="1"/>
+  <path d="M50 24 C48 20 50 18 54 20 C56 18 58 20 56 24 C58 24 56 26 52 26 C50 26 48 24 50 24Z" stroke-width="1"/>
+  <path d="M58 26 C56 22 58 20 62 22 C64 20 66 22 64 26 C66 26 64 28 60 28 C58 28 56 26 58 26Z" stroke-width="1"/>
+  <path d="M38 34 C36 30 38 28 42 30 C44 28 46 30 44 34 C46 34 44 36 40 36 C38 36 36 34 38 34Z" stroke-width="1"/>
+  <path d="M46 32 C44 28 46 26 50 28 C52 26 54 28 52 32 C54 32 52 34 48 34 C46 34 44 32 46 32Z" stroke-width="1"/>
+  <path d="M54 32 C52 28 54 26 58 28 C60 26 62 28 60 32 C62 32 60 34 56 34 C54 34 52 32 54 32Z" stroke-width="1"/>
+  <!-- stem -->
+  <path d="M50 36 L50 84"/>
+  <!-- large leaves -->
+  <path d="M50 56 C40 48 26 48 22 56 C28 60 26 64 32 68 C38 64 44 60 50 60" stroke-width="1.3"/>
+  <path d="M22 56 L50 56" stroke-width="0.8"/>
+  <path d="M50 68 C60 60 74 60 78 68 C72 72 74 76 68 80 C62 76 56 72 50 72" stroke-width="1.3"/>
+  <path d="M78 68 L50 68" stroke-width="0.8"/>
+</svg>

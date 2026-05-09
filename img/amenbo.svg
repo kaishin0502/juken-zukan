@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- amenbo (water strider) - long legs on water -->
+  <!-- body -->
+  <ellipse cx="50" cy="44" rx="6" ry="4"/>
+  <ellipse cx="50" cy="54" rx="4" ry="8"/>
+  <!-- head -->
+  <circle cx="50" cy="36" r="4"/>
+  <!-- eyes -->
+  <circle cx="48" cy="35" r="1" fill="#333"/>
+  <circle cx="52" cy="35" r="1" fill="#333"/>
+  <!-- antennae -->
+  <path d="M48 33 C44 28 40 26 36 26" stroke-width="1"/>
+  <path d="M52 33 C56 28 60 26 64 26" stroke-width="1"/>
+  <!-- front legs (short) -->
+  <path d="M46 40 C38 36 30 34 24 36" stroke-width="1.2"/>
+  <path d="M54 40 C62 36 70 34 76 36" stroke-width="1.2"/>
+  <!-- middle legs (very long, spread on water) -->
+  <path d="M46 46 C34 44 18 50 6 60" stroke-width="1.3"/>
+  <path d="M54 46 C66 44 82 50 94 60" stroke-width="1.3"/>
+  <!-- back legs (long) -->
+  <path d="M48 58 C40 64 30 72 22 78" stroke-width="1.3"/>
+  <path d="M52 58 C60 64 70 72 78 78" stroke-width="1.3"/>
+  <!-- water ripples at leg tips -->
+  <ellipse cx="6" cy="62" rx="6" ry="2" stroke-width="0.8" opacity="0.4"/>
+  <ellipse cx="94" cy="62" rx="6" ry="2" stroke-width="0.8" opacity="0.4"/>
+  <ellipse cx="22" cy="80" rx="5" ry="1.5" stroke-width="0.8" opacity="0.4"/>
+  <ellipse cx="78" cy="80" rx="5" ry="1.5" stroke-width="0.8" opacity="0.4"/>
+  <!-- water surface -->
+  <path d="M0 70 C20 68 40 72 60 68 C80 64 100 70 100 70" stroke-width="0.8" opacity="0.3"/>
+</svg>

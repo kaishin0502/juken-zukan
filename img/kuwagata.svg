@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- stag beetle - large mandibles -->
+  <!-- mandibles (big jaws) -->
+  <path d="M40 30 C36 22 28 14 22 10 C20 10 20 14 24 18 C28 22 32 26 36 30" stroke-width="2"/>
+  <path d="M22 10 C24 8 28 10 30 14" stroke-width="1.5"/>
+  <path d="M60 30 C64 22 72 14 78 10 C80 10 80 14 76 18 C72 22 68 26 64 30" stroke-width="2"/>
+  <path d="M78 10 C76 8 72 10 70 14" stroke-width="1.5"/>
+  <!-- head -->
+  <path d="M36 28 C36 24 42 22 50 22 C58 22 64 24 64 28 L64 38 C64 42 58 44 50 44 C42 44 36 42 36 38Z"/>
+  <!-- eyes -->
+  <circle cx="42" cy="32" r="2.5" fill="#333"/>
+  <circle cx="58" cy="32" r="2.5" fill="#333"/>
+  <!-- pronotum -->
+  <path d="M32 44 L68 44 L70 54 C70 56 62 58 50 58 C38 58 30 56 30 54Z" stroke-width="1.8"/>
+  <!-- elytra -->
+  <path d="M30 58 C28 64 28 74 32 82 C38 90 46 92 50 92 C54 92 62 90 68 82 C72 74 72 64 70 58"/>
+  <path d="M50 58 L50 92" stroke-width="1"/>
+  <!-- legs -->
+  <path d="M34 48 C26 44 20 46 16 50" stroke-width="1.3"/>
+  <path d="M32 60 C24 58 18 62 14 66" stroke-width="1.3"/>
+  <path d="M34 72 C28 74 22 78 20 84" stroke-width="1.3"/>
+  <path d="M66 48 C74 44 80 46 84 50" stroke-width="1.3"/>
+  <path d="M68 60 C76 58 82 62 86 66" stroke-width="1.3"/>
+  <path d="M66 72 C72 74 78 78 80 84" stroke-width="1.3"/>
+</svg>

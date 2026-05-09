@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- poinsettia - star-shaped red bracts around center -->
+  <!-- bracts (star-shaped leaves) -->
+  <path d="M50 10 C46 22 44 30 48 40 L50 40 L52 40 C56 30 54 22 50 10"/>
+  <path d="M78 22 C70 30 64 34 60 40 L58 42 C66 42 74 38 78 22"/>
+  <path d="M88 54 C76 50 68 48 62 48 L60 50 C66 56 76 58 88 54"/>
+  <path d="M72 80 C66 70 62 64 58 58 L56 58 C58 66 62 74 72 80"/>
+  <path d="M50 88 C52 76 52 68 52 58 L50 56 L48 58 C48 68 48 76 50 88"/>
+  <path d="M28 80 C34 70 38 64 42 58 L44 58 C42 66 38 74 28 80"/>
+  <path d="M12 54 C24 50 32 48 38 48 L40 50 C34 56 24 58 12 54"/>
+  <path d="M22 22 C30 30 36 34 40 40 L42 42 C34 42 26 38 22 22"/>
+  <!-- center veins -->
+  <line x1="50" y1="16" x2="50" y2="38" stroke-width="0.8" opacity="0.4"/>
+  <line x1="74" y1="26" x2="58" y2="40" stroke-width="0.8" opacity="0.4"/>
+  <line x1="84" y1="54" x2="60" y2="50" stroke-width="0.8" opacity="0.4"/>
+  <!-- center cluster -->
+  <circle cx="50" cy="48" r="6"/>
+  <circle cx="48" cy="46" r="1.5" fill="#333"/>
+  <circle cx="52" cy="46" r="1.5" fill="#333"/>
+  <circle cx="50" cy="50" r="1.5" fill="#333"/>
+  <circle cx="46" cy="49" r="1.2" fill="#333"/>
+  <circle cx="54" cy="49" r="1.2" fill="#333"/>
+</svg>

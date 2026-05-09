@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- cicada - transparent wings, stout body -->
+  <!-- head -->
+  <path d="M36 32 C36 26 42 22 50 22 C58 22 64 26 64 32 L64 38 C64 40 58 42 50 42 C42 42 36 40 36 38Z"/>
+  <!-- eyes (large, on sides) -->
+  <circle cx="38" cy="30" r="4"/>
+  <circle cx="62" cy="30" r="4"/>
+  <circle cx="38" cy="30" r="2" fill="#333"/>
+  <circle cx="62" cy="30" r="2" fill="#333"/>
+  <!-- proboscis -->
+  <path d="M50 42 L50 48" stroke-width="1"/>
+  <!-- thorax -->
+  <path d="M38 42 L62 42 L64 52 C64 54 58 56 50 56 C42 56 36 54 36 52Z"/>
+  <!-- wings (transparent, veined) -->
+  <path d="M38 44 C28 38 16 36 12 42 C10 50 18 58 30 60 C36 60 38 56 38 52" stroke-width="1.2"/>
+  <path d="M62 44 C72 38 84 36 88 42 C90 50 82 58 70 60 C64 60 62 56 62 52" stroke-width="1.2"/>
+  <!-- wing veins -->
+  <path d="M36 46 L18 44" stroke-width="0.7"/>
+  <path d="M36 50 L22 52" stroke-width="0.7"/>
+  <path d="M36 54 L28 58" stroke-width="0.7"/>
+  <path d="M64 46 L82 44" stroke-width="0.7"/>
+  <path d="M64 50 L78 52" stroke-width="0.7"/>
+  <path d="M64 54 L72 58" stroke-width="0.7"/>
+  <!-- abdomen -->
+  <path d="M36 56 C34 62 34 70 38 78 C42 84 48 86 50 86 C52 86 58 84 62 78 C66 70 66 62 64 56"/>
+  <!-- abdomen segments -->
+  <path d="M38 62 L62 62" stroke-width="0.8"/>
+  <path d="M38 68 L62 68" stroke-width="0.8"/>
+  <path d="M40 74 L60 74" stroke-width="0.8"/>
+  <!-- legs -->
+  <path d="M40 48 C34 48 28 52 24 56" stroke-width="1.2"/>
+  <path d="M40 54 C34 56 28 60 26 66" stroke-width="1.2"/>
+  <path d="M60 48 C66 48 72 52 76 56" stroke-width="1.2"/>
+  <path d="M60 54 C66 56 72 60 74 66" stroke-width="1.2"/>
+</svg>

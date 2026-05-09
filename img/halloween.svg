@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Halloween - jack-o-lantern -->
+  <!-- pumpkin body -->
+  <path d="M50 18 C30 18 14 32 14 50 C14 68 30 82 50 82 C70 82 86 68 86 50 C86 32 70 18 50 18Z"/>
+  <!-- pumpkin ridges -->
+  <path d="M50 18 C42 30 40 50 42 70 C44 78 48 82 50 82" stroke-width="1"/>
+  <path d="M50 18 C58 30 60 50 58 70 C56 78 52 82 50 82" stroke-width="1"/>
+  <path d="M50 18 C34 24 26 40 28 58 C30 72 38 80 44 82" stroke-width="1"/>
+  <path d="M50 18 C66 24 74 40 72 58 C70 72 62 80 56 82" stroke-width="1"/>
+  <!-- stem -->
+  <path d="M46 18 C44 12 46 8 50 6 C54 8 56 12 54 18" stroke-width="2"/>
+  <!-- vine -->
+  <path d="M54 12 C58 8 64 6 68 8 C66 10 62 10 60 12" stroke-width="1"/>
+  <!-- eyes (triangles) -->
+  <path d="M34 42 L40 34 L46 42Z" fill="#333"/>
+  <path d="M54 42 L60 34 L66 42Z" fill="#333"/>
+  <!-- nose (triangle) -->
+  <path d="M47 50 L50 44 L53 50Z" fill="#333"/>
+  <!-- mouth (jagged smile) -->
+  <path d="M30 58 L36 54 L42 60 L48 54 L52 60 L58 54 L64 60 L70 58" stroke-width="2"/>
+  <!-- ghost decoration -->
+  <path d="M84 22 C82 18 84 14 88 14 C92 14 94 18 92 22 C92 26 90 30 88 32 C86 30 84 26 84 22Z" stroke-width="1"/>
+  <circle cx="86" cy="20" r="1" fill="#333"/>
+  <circle cx="90" cy="20" r="1" fill="#333"/>
+</svg>

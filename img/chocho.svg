@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- butterfly - elegant wing pattern -->
+  <!-- body -->
+  <ellipse cx="50" cy="46" rx="2.5" ry="16"/>
+  <!-- head -->
+  <circle cx="50" cy="28" r="4"/>
+  <circle cx="48" cy="27" r="1" fill="#333"/>
+  <circle cx="52" cy="27" r="1" fill="#333"/>
+  <!-- antennae -->
+  <path d="M48 24 C44 16 40 12 38 10"/>
+  <circle cx="38" cy="9" r="1.5" fill="#333"/>
+  <path d="M52 24 C56 16 60 12 62 10"/>
+  <circle cx="62" cy="9" r="1.5" fill="#333"/>
+  <!-- upper wings -->
+  <path d="M48 34 C38 26 24 22 20 28 C18 36 24 44 32 48 C38 50 44 48 48 44"/>
+  <path d="M52 34 C62 26 76 22 80 28 C82 36 76 44 68 48 C62 50 56 48 52 44"/>
+  <!-- wing patterns -->
+  <circle cx="32" cy="32" r="5" stroke-width="1"/>
+  <circle cx="28" cy="38" r="3" stroke-width="1"/>
+  <circle cx="68" cy="32" r="5" stroke-width="1"/>
+  <circle cx="72" cy="38" r="3" stroke-width="1"/>
+  <!-- lower wings -->
+  <path d="M48 46 C40 48 30 54 28 60 C30 66 38 66 44 62 C48 58 48 52 48 48"/>
+  <path d="M52 46 C60 48 70 54 72 60 C70 66 62 66 56 62 C52 58 52 52 52 48"/>
+  <!-- lower wing patterns -->
+  <path d="M36 58 C38 56 40 58 38 60" stroke-width="1"/>
+  <path d="M64 58 C62 56 60 58 62 60" stroke-width="1"/>
+</svg>

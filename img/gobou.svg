@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- gobou (burdock root) - long thin roots -->
+  <!-- root 1 (main) -->
+  <path d="M40 16 C38 30 36 50 34 70 C33 80 32 88 30 96" stroke-width="3"/>
+  <!-- root 2 -->
+  <path d="M52 18 C54 32 56 52 58 72 C59 82 60 90 62 96" stroke-width="2.5"/>
+  <!-- root 3 (thin) -->
+  <path d="M64 22 C66 36 68 54 70 74 C71 84 72 92 74 96" stroke-width="2"/>
+  <!-- root hairs/texture -->
+  <path d="M38 40 C36 38 34 40" stroke-width="0.8" opacity="0.5"/>
+  <path d="M36 56 C34 54 32 56" stroke-width="0.8" opacity="0.5"/>
+  <path d="M34 72 C32 70 30 72" stroke-width="0.8" opacity="0.5"/>
+  <path d="M56 44 C58 42 60 44" stroke-width="0.8" opacity="0.5"/>
+  <path d="M58 62 C60 60 62 62" stroke-width="0.8" opacity="0.5"/>
+  <!-- soil line -->
+  <path d="M10 26 L90 26" stroke-width="1" stroke-dasharray="4 3" opacity="0.4"/>
+  <!-- leaves above ground -->
+  <path d="M40 16 C36 12 28 8 22 6 C28 4 36 6 40 10" fill="none" stroke-width="1.5"/>
+  <path d="M40 16 C42 10 46 4 50 2 C48 8 44 14 40 16" fill="none" stroke-width="1.5"/>
+  <path d="M52 18 C56 12 62 8 68 6 C64 12 58 16 52 18" fill="none" stroke-width="1.5"/>
+  <!-- leaf veins -->
+  <path d="M40 14 L30 6" stroke-width="0.6" opacity="0.4"/>
+  <path d="M40 14 L46 4" stroke-width="0.6" opacity="0.4"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- tamanegi (onion) - round bulb with skin lines and sprout -->
+  <!-- bulb -->
+  <path d="M50 28 C30 32 20 48 22 62 C24 74 34 82 50 84 C66 82 76 74 78 62 C80 48 70 32 50 28"/>
+  <!-- root -->
+  <path d="M42 84 C40 90 38 94 36 98" stroke-width="1"/>
+  <path d="M50 84 C50 90 50 94 50 98" stroke-width="1"/>
+  <path d="M58 84 C60 90 62 94 64 98" stroke-width="1"/>
+  <!-- skin texture lines -->
+  <path d="M40 34 C32 44 28 56 30 68 C32 76 38 82 46 84" stroke-width="0.8" opacity="0.4"/>
+  <path d="M60 34 C68 44 72 56 70 68 C68 76 62 82 54 84" stroke-width="0.8" opacity="0.4"/>
+  <!-- top sprout -->
+  <path d="M50 28 C48 22 44 14 40 6" stroke-width="2"/>
+  <path d="M50 28 C52 20 54 12 52 4" stroke-width="2"/>
+  <path d="M50 28 C54 22 58 16 62 10" stroke-width="1.8"/>
+</svg>

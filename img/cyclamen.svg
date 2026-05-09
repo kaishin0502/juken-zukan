@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- cyclamen - upswept petals, heart-shaped leaves -->
+  <!-- flowers with reflexed petals -->
+  <path d="M40 30 C38 22 36 14 40 10 C44 14 42 22 40 28"/>
+  <path d="M40 30 C36 24 30 18 32 14 C36 16 38 22 40 28"/>
+  <path d="M40 30 C44 24 48 18 46 14 C42 16 40 22 40 28"/>
+  <path d="M56 26 C54 18 52 10 56 6 C60 10 58 18 56 24"/>
+  <path d="M56 26 C52 20 46 14 48 10 C52 12 54 18 56 24"/>
+  <path d="M56 26 C60 20 64 14 62 10 C58 12 56 18 56 24"/>
+  <!-- curved stems -->
+  <path d="M40 30 C40 36 42 42 46 48"/>
+  <path d="M56 26 C56 32 54 40 50 48"/>
+  <!-- bud -->
+  <path d="M64 32 C64 28 66 24 68 22" stroke-width="1.2"/>
+  <ellipse cx="68" cy="21" rx="2" ry="3"/>
+  <!-- base/corm -->
+  <ellipse cx="50" cy="52" rx="12" ry="4"/>
+  <!-- heart-shaped leaves -->
+  <path d="M42 56 C36 52 26 54 24 62 C28 68 36 66 42 60" stroke-width="1.2"/>
+  <path d="M42 56 L32 56" stroke-width="0.8"/>
+  <path d="M58 56 C64 52 74 54 76 62 C72 68 64 66 58 60" stroke-width="1.2"/>
+  <path d="M58 56 L68 56" stroke-width="0.8"/>
+  <!-- leaf stems -->
+  <path d="M42 58 C44 54 46 52 48 52"/>
+  <path d="M58 58 C56 54 54 52 52 52"/>
+  <!-- leaf patterns -->
+  <path d="M30 58 C32 62 36 64 40 62" stroke-width="0.6"/>
+  <path d="M70 58 C68 62 64 64 60 62" stroke-width="0.6"/>
+</svg>

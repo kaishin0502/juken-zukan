@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- azalea - funnel-shaped flowers in cluster -->
+  <!-- flower 1 center -->
+  <path d="M44 30 C44 22 48 16 50 14 C52 16 56 22 56 30"/>
+  <path d="M44 30 Q50 34 56 30"/>
+  <path d="M48 16 L48 10 M50 14 L50 8 M52 16 L52 10" stroke-width="1"/>
+  <!-- flower 2 left -->
+  <path d="M30 36 C30 28 34 22 36 20 C38 22 42 28 42 36"/>
+  <path d="M30 36 Q36 40 42 36"/>
+  <path d="M34 22 L34 16 M36 20 L36 14 M38 22 L38 16" stroke-width="1"/>
+  <!-- flower 3 right -->
+  <path d="M58 34 C58 26 62 20 64 18 C66 20 70 26 70 34"/>
+  <path d="M58 34 Q64 38 70 34"/>
+  <path d="M62 20 L62 14 M64 18 L64 12 M66 20 L66 14" stroke-width="1"/>
+  <!-- stem -->
+  <path d="M50 34 L50 84"/>
+  <path d="M36 36 L50 48"/>
+  <path d="M64 34 L50 46"/>
+  <!-- leaves -->
+  <path d="M50 60 C44 56 36 54 30 58 C36 60 34 62 38 64" stroke-width="1.2"/>
+  <path d="M50 70 C56 66 64 64 70 68 C64 70 66 72 62 74" stroke-width="1.2"/>
+</svg>

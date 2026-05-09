@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- watermelon splitting -->
+  <!-- watermelon -->
+  <circle cx="50" cy="70" r="18"/>
+  <!-- stripes -->
+  <path d="M38 58 C40 66 40 74 38 82" stroke-width="1"/>
+  <path d="M46 54 C46 62 46 78 46 86" stroke-width="1"/>
+  <path d="M54 54 C54 62 54 78 54 86" stroke-width="1"/>
+  <path d="M62 58 C60 66 60 74 62 82" stroke-width="1"/>
+  <!-- blindfolded child -->
+  <circle cx="50" cy="24" r="10"/>
+  <!-- hair -->
+  <path d="M40 20 C40 14 44 10 50 10 C56 10 60 14 60 20" stroke-width="2"/>
+  <!-- blindfold -->
+  <path d="M38 22 L62 22" stroke-width="3"/>
+  <!-- mouth (excited) -->
+  <path d="M46 28 Q50 32 54 28" stroke-width="1"/>
+  <!-- body -->
+  <path d="M44 34 L44 48 L56 48 L56 34"/>
+  <!-- arms holding stick up -->
+  <path d="M44 38 L32 30 L28 20"/>
+  <path d="M56 38 L68 30 L72 20"/>
+  <!-- stick (bo) -->
+  <path d="M26 16 L74 16" stroke-width="2.5"/>
+  <!-- legs -->
+  <path d="M46 48 L46 56 M54 48 L54 56" stroke-width="1.5"/>
+</svg>

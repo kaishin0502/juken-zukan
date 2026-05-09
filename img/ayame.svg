@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- ayame (iris) - 3 drooping petals, sword leaves -->
+  <!-- center petal (upright) -->
+  <path d="M50 20 C46 28 44 36 48 42 C50 44 52 44 54 42 C58 36 56 28 52 20 Z"/>
+  <!-- left drooping petal -->
+  <path d="M48 42 C42 46 34 52 28 58 C26 60 28 62 30 62 C36 60 42 54 48 48"/>
+  <!-- right drooping petal -->
+  <path d="M54 42 C60 46 68 52 74 58 C76 60 74 62 72 62 C66 60 60 54 54 48"/>
+  <!-- petal veins -->
+  <path d="M50 24 L50 40" stroke-width="0.8" opacity="0.5"/>
+  <path d="M38 50 L30 58" stroke-width="0.8" opacity="0.5"/>
+  <path d="M64 50 L72 58" stroke-width="0.8" opacity="0.5"/>
+  <!-- stem -->
+  <path d="M50 44 L50 85" stroke-width="2"/>
+  <!-- sword-like leaves -->
+  <path d="M50 60 C42 56 36 46 30 32" stroke-width="1.8"/>
+  <path d="M50 65 C58 58 64 48 68 36" stroke-width="1.8"/>
+</svg>

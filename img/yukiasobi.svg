@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- snow play - snowman -->
+  <!-- lower snowball -->
+  <circle cx="50" cy="64" r="22"/>
+  <!-- upper snowball -->
+  <circle cx="50" cy="34" r="16"/>
+  <!-- hat -->
+  <path d="M38 22 L62 22" stroke-width="2.5"/>
+  <rect x="42" y="10" width="16" height="12" rx="1" stroke-width="1.5"/>
+  <!-- eyes -->
+  <circle cx="44" cy="32" r="2" fill="#333"/>
+  <circle cx="56" cy="32" r="2" fill="#333"/>
+  <!-- carrot nose -->
+  <path d="M50 36 L54 40 L50 40Z" fill="#333"/>
+  <!-- mouth (dots) -->
+  <circle cx="44" cy="42" r="1" fill="#333"/>
+  <circle cx="48" cy="44" r="1" fill="#333"/>
+  <circle cx="52" cy="44" r="1" fill="#333"/>
+  <circle cx="56" cy="42" r="1" fill="#333"/>
+  <!-- scarf -->
+  <path d="M36 48 C40 52 50 54 60 52 C64 50 66 48 64 46" stroke-width="2.5"/>
+  <path d="M60 52 L62 62" stroke-width="2.5"/>
+  <!-- buttons -->
+  <circle cx="50" cy="58" r="2" fill="#333"/>
+  <circle cx="50" cy="66" r="2" fill="#333"/>
+  <circle cx="50" cy="74" r="2" fill="#333"/>
+  <!-- stick arms -->
+  <path d="M28 52 L18 42" stroke-width="2"/>
+  <path d="M18 42 L14 38 M18 42 L14 46" stroke-width="1.5"/>
+  <path d="M72 52 L82 42" stroke-width="2"/>
+  <path d="M82 42 L86 38 M82 42 L86 46" stroke-width="1.5"/>
+  <!-- snowflakes -->
+  <path d="M14 18 L14 24 M11 21 L17 21 M12 19 L16 23 M16 19 L12 23" stroke-width="0.8"/>
+  <path d="M84 14 L84 20 M81 17 L87 17 M82 15 L86 19 M86 15 L82 19" stroke-width="0.8"/>
+  <!-- ground snow -->
+  <path d="M0 86 C10 84 20 86 30 84 C40 86 50 84 60 86 C70 84 80 86 90 84 C95 86 100 84 100 86"/>
+</svg>

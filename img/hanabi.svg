@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- fireworks -->
+  <!-- large firework burst -->
+  <circle cx="50" cy="34" r="3" fill="#333"/>
+  <!-- rays -->
+  <path d="M50 34 L50 10"/><path d="M50 34 L50 58"/>
+  <path d="M50 34 L26 34"/><path d="M50 34 L74 34"/>
+  <path d="M50 34 L33 17"/><path d="M50 34 L67 17"/>
+  <path d="M50 34 L33 51"/><path d="M50 34 L67 51"/>
+  <!-- sparkles at tips -->
+  <path d="M48 10 L50 8 L52 10" stroke-width="1"/>
+  <path d="M48 58 L50 60 L52 58" stroke-width="1"/>
+  <path d="M24 32 L22 34 L24 36" stroke-width="1"/>
+  <path d="M74 32 L76 34 L74 36" stroke-width="1"/>
+  <path d="M31 17 L33 15 L35 17" stroke-width="1"/>
+  <path d="M65 17 L67 15 L69 17" stroke-width="1"/>
+  <!-- small dots between rays -->
+  <circle cx="42" cy="20" r="1.5" fill="#333"/>
+  <circle cx="58" cy="20" r="1.5" fill="#333"/>
+  <circle cx="36" cy="42" r="1.5" fill="#333"/>
+  <circle cx="64" cy="42" r="1.5" fill="#333"/>
+  <circle cx="38" cy="28" r="1" fill="#333"/>
+  <circle cx="62" cy="28" r="1" fill="#333"/>
+  <circle cx="38" cy="40" r="1" fill="#333"/>
+  <circle cx="62" cy="40" r="1" fill="#333"/>
+  <!-- smaller firework -->
+  <circle cx="18" cy="56" r="1.5" fill="#333"/>
+  <path d="M18 56 L18 46 M18 56 L10 56 M18 56 L26 56 M18 56 L12 50 M18 56 L24 50" stroke-width="1"/>
+  <!-- ground/cityscape silhouette -->
+  <path d="M0 84 L10 84 L10 78 L16 78 L16 82 L24 82 L24 76 L30 76 L30 84 L40 84 L40 80 L50 80 L50 72 L54 72 L54 80 L60 80 L60 84 L70 84 L70 78 L76 78 L76 84 L90 84 L90 80 L100 80" stroke-width="1.5"/>
+</svg>

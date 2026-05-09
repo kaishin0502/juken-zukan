@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- cosmos - 8 petals with notched tips -->
+  <circle cx="50" cy="30" r="5"/>
+  <circle cx="50" cy="30" r="2" fill="#333"/>
+  <!-- 8 petals with notches at tips -->
+  <path d="M50 25 C48 18 46 10 48 8 L50 12 L52 8 C54 10 52 18 50 25"/>
+  <path d="M54 26 C58 20 64 14 66 14 L64 18 L68 16 C66 20 60 22 54 26"/>
+  <path d="M55 30 C62 28 70 26 72 28 L68 30 L72 32 C70 34 62 32 55 30"/>
+  <path d="M54 34 C58 40 62 46 62 48 L58 46 L60 50 C56 48 54 42 54 34"/>
+  <path d="M50 35 C52 42 54 50 52 52 L50 48 L48 52 C46 50 48 42 50 35"/>
+  <path d="M46 34 C42 40 38 46 38 48 L42 46 L40 50 C44 48 46 42 46 34"/>
+  <path d="M45 30 C38 32 30 34 28 32 L32 30 L28 28 C30 26 38 28 45 30"/>
+  <path d="M46 26 C42 20 36 14 34 14 L36 18 L32 16 C34 20 40 22 46 26"/>
+  <!-- stem -->
+  <path d="M50 38 L50 86"/>
+  <!-- feathery leaves -->
+  <path d="M50 56 L40 50 M40 50 L36 46 M40 50 L34 52" stroke-width="1.2"/>
+  <path d="M50 56 L42 58 M42 58 L38 56 M42 58 L38 62" stroke-width="1.2"/>
+  <path d="M50 68 L60 62 M60 62 L64 58 M60 62 L66 64" stroke-width="1.2"/>
+  <path d="M50 68 L58 70 M58 70 L62 68 M58 70 L62 74" stroke-width="1.2"/>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- New Year's - kadomatsu (bamboo/pine decoration) -->
+  <!-- bamboo stalks (3, cut diagonally) -->
+  <path d="M38 30 L38 80" stroke-width="4"/>
+  <path d="M38 30 L32 20" stroke-width="4"/>
+  <path d="M50 22 L50 80" stroke-width="4"/>
+  <path d="M50 22 L44 12" stroke-width="4"/>
+  <path d="M62 34 L62 80" stroke-width="4"/>
+  <path d="M62 34 L56 24" stroke-width="4"/>
+  <!-- diagonal cut tops -->
+  <ellipse cx="35" cy="25" rx="4" ry="2" transform="rotate(-40 35 25)"/>
+  <ellipse cx="47" cy="17" rx="4" ry="2" transform="rotate(-40 47 17)"/>
+  <ellipse cx="59" cy="29" rx="4" ry="2" transform="rotate(-40 59 29)"/>
+  <!-- pine branches -->
+  <path d="M30 44 C22 40 14 38 8 40" stroke-width="1.2"/>
+  <path d="M30 44 C22 42 16 44 10 48" stroke-width="1.2"/>
+  <path d="M30 48 C22 48 16 50 12 54" stroke-width="1.2"/>
+  <path d="M70 44 C78 40 86 38 92 40" stroke-width="1.2"/>
+  <path d="M70 44 C78 42 84 44 90 48" stroke-width="1.2"/>
+  <path d="M70 48 C78 48 84 50 88 54" stroke-width="1.2"/>
+  <!-- rope binding (warazuto) -->
+  <path d="M26 60 C30 56 40 54 50 54 C60 54 70 56 74 60" stroke-width="2.5"/>
+  <path d="M26 64 C30 60 40 58 50 58 C60 58 70 60 74 64" stroke-width="2.5"/>
+  <!-- base/pot -->
+  <path d="M24 72 L76 72 L72 86 L28 86Z" stroke-width="2"/>
+  <!-- decorative rope knots -->
+  <circle cx="50" cy="57" r="3"/>
+  <path d="M47 60 C44 64 42 66 40 68" stroke-width="1"/>
+  <path d="M53 60 C56 64 58 66 60 68" stroke-width="1"/>
+</svg>

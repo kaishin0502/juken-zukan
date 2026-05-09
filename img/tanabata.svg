@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Tanabata - bamboo with tanzaku strips -->
+  <!-- bamboo stalk -->
+  <path d="M50 4 L50 92" stroke-width="2.5"/>
+  <!-- bamboo nodes -->
+  <path d="M46 20 L54 20" stroke-width="2.5"/>
+  <path d="M46 44 L54 44" stroke-width="2.5"/>
+  <path d="M46 68 L54 68" stroke-width="2.5"/>
+  <!-- bamboo leaves -->
+  <path d="M50 18 C42 14 34 14 28 16" stroke-width="1.2"/>
+  <path d="M50 16 C44 10 36 8 30 10" stroke-width="1.2"/>
+  <path d="M50 20 C58 16 66 16 72 18" stroke-width="1.2"/>
+  <path d="M50 42 C42 38 34 38 28 40" stroke-width="1.2"/>
+  <path d="M50 46 C58 42 66 42 72 44" stroke-width="1.2"/>
+  <!-- tanzaku (wish strips) -->
+  <rect x="24" y="24" width="8" height="18" rx="1"/>
+  <path d="M26 28 L30 28 M26 32 L30 32 M26 36 L30 36" stroke-width="0.6"/>
+  <rect x="62" y="28" width="8" height="18" rx="1"/>
+  <path d="M64 32 L68 32 M64 36 L68 36 M64 40 L68 40" stroke-width="0.6"/>
+  <!-- star ornament -->
+  <path d="M38 50 L40 56 L34 52 L42 52 L36 56Z" stroke-width="1"/>
+  <!-- string from bamboo to ornaments -->
+  <path d="M50 22 C40 22 30 22 28 24" stroke-width="0.8"/>
+  <path d="M50 24 C58 24 66 26 66 28" stroke-width="0.8"/>
+  <path d="M50 44 C44 46 40 48 38 50" stroke-width="0.8"/>
+  <!-- stars in sky -->
+  <path d="M14 8 L15 12 L12 10 L18 10 L14 12Z" stroke-width="0.8" fill="#333"/>
+  <path d="M82 12 L83 16 L80 14 L86 14 L82 16Z" stroke-width="0.8" fill="#333"/>
+</svg>

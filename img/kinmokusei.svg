@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- osmanthus - small clustered flowers on branch -->
+  <!-- branch -->
+  <path d="M20 80 C30 60 40 50 50 40 C55 34 60 30 68 26"/>
+  <!-- leaves along branch -->
+  <path d="M36 58 C30 52 24 52 22 56 C26 58 24 60 28 62" stroke-width="1.2"/>
+  <path d="M36 58 L28 54" stroke-width="0.8"/>
+  <path d="M44 48 C50 42 56 42 58 46 C54 48 56 50 52 52" stroke-width="1.2"/>
+  <path d="M44 48 L52 44" stroke-width="0.8"/>
+  <path d="M40 52 C34 48 28 48 26 52" stroke-width="1.2"/>
+  <!-- clusters of tiny 4-petal flowers -->
+  <path d="M56 32 L54 28 M56 32 L58 28 M56 32 L52 32 M56 32 L60 32" stroke-width="1"/>
+  <circle cx="54" cy="28" r="1" fill="#333"/><circle cx="58" cy="28" r="1" fill="#333"/>
+  <circle cx="52" cy="32" r="1" fill="#333"/><circle cx="60" cy="32" r="1" fill="#333"/>
+  <path d="M62 28 L60 24 M62 28 L64 24 M62 28 L58 28 M62 28 L66 28" stroke-width="1"/>
+  <circle cx="60" cy="24" r="1" fill="#333"/><circle cx="64" cy="24" r="1" fill="#333"/>
+  <path d="M68 26 L66 22 M68 26 L70 22 M68 26 L72 26" stroke-width="1"/>
+  <circle cx="66" cy="22" r="1" fill="#333"/><circle cx="70" cy="22" r="1" fill="#333"/>
+  <path d="M58 36 L56 38 M58 36 L60 38 M58 36 L54 36" stroke-width="1"/>
+  <circle cx="56" cy="38" r="1" fill="#333"/><circle cx="60" cy="38" r="1" fill="#333"/>
+</svg>

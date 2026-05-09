@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- hina dolls - emperor and empress on tiered stand -->
+  <!-- empress (left) -->
+  <circle cx="34" cy="24" r="7"/>
+  <!-- hair -->
+  <path d="M27 22 C27 18 30 14 34 14 C38 14 41 18 41 22" stroke-width="2"/>
+  <!-- face -->
+  <circle cx="32" cy="24" r="1" fill="#333"/>
+  <circle cx="36" cy="24" r="1" fill="#333"/>
+  <path d="M32 27 Q34 29 36 27" stroke-width="0.8"/>
+  <!-- kimono body (triangular) -->
+  <path d="M26 30 L34 30 L42 30 L46 54 L22 54Z"/>
+  <path d="M30 30 L28 54" stroke-width="0.8"/>
+  <path d="M38 30 L40 54" stroke-width="0.8"/>
+  <!-- fan -->
+  <path d="M24 40 C20 36 18 38 20 42 C22 44 24 42 24 40Z" fill="#333"/>
+  <!-- emperor (right) -->
+  <circle cx="66" cy="24" r="7"/>
+  <!-- tall hat -->
+  <path d="M60 18 L60 8 L72 8 L72 18" stroke-width="1.5"/>
+  <!-- face -->
+  <circle cx="64" cy="24" r="1" fill="#333"/>
+  <circle cx="68" cy="24" r="1" fill="#333"/>
+  <path d="M64 27 Q66 29 68 27" stroke-width="0.8"/>
+  <!-- kimono body -->
+  <path d="M58 30 L66 30 L74 30 L78 54 L54 54Z"/>
+  <path d="M62 30 L60 54" stroke-width="0.8"/>
+  <path d="M70 30 L72 54" stroke-width="0.8"/>
+  <!-- scepter -->
+  <path d="M76 32 L82 28 L84 30"/>
+  <!-- platform -->
+  <path d="M14 54 L86 54" stroke-width="2.5"/>
+  <!-- lower tier -->
+  <path d="M10 58 L90 58 L88 66 L12 66Z" stroke-width="1.5"/>
+  <!-- peach blossoms decoration -->
+  <circle cx="16" cy="62" r="2.5" stroke-width="1"/>
+  <circle cx="84" cy="62" r="2.5" stroke-width="1"/>
+  <!-- base tier -->
+  <path d="M8 66 L92 66 L90 74 L10 74Z" stroke-width="1.5"/>
+</svg>

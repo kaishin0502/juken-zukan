@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- biwa (loquat) - oval fruits in small cluster, large leaves -->
+  <!-- fruit 1 (center) -->
+  <ellipse cx="50" cy="42" rx="12" ry="14"/>
+  <path d="M47 30 C49 28 51 28 53 30" stroke-width="1"/>
+  <!-- fruit 2 (left) -->
+  <ellipse cx="34" cy="48" rx="10" ry="12"/>
+  <path d="M31 38 C33 36 35 36 37 38" stroke-width="1"/>
+  <!-- fruit 3 (right) -->
+  <ellipse cx="66" cy="48" rx="10" ry="12"/>
+  <path d="M63 38 C65 36 67 36 69 38" stroke-width="1"/>
+  <!-- stems -->
+  <path d="M50 28 L50 20 L48 14" stroke-width="1.5"/>
+  <path d="M34 36 L36 24 L48 14" stroke-width="1.5"/>
+  <path d="M66 36 L64 24 L52 16" stroke-width="1.5"/>
+  <!-- branch -->
+  <path d="M48 14 C44 10 40 8 36 8" stroke-width="2"/>
+  <!-- leaf (large, elongated) -->
+  <path d="M36 8 C28 12 22 22 20 32 C24 28 32 18 36 8" fill="none"/>
+  <path d="M36 8 L26 22" stroke-width="0.8"/>
+  <!-- another leaf -->
+  <path d="M52 16 C60 10 70 8 78 12 C72 16 62 16 52 16" fill="none"/>
+  <path d="M52 16 L68 12" stroke-width="0.8"/>
+  <!-- bottom detail -->
+  <circle cx="50" cy="55" r="1.5"/>
+  <circle cx="34" cy="59" r="1.2"/>
+  <circle cx="66" cy="59" r="1.2"/>
+</svg>

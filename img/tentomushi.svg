@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- ladybug - dome shape with spots -->
+  <!-- body dome -->
+  <ellipse cx="50" cy="50" rx="22" ry="26"/>
+  <!-- center line -->
+  <path d="M50 24 L50 76"/>
+  <!-- head -->
+  <circle cx="50" cy="24" r="10"/>
+  <circle cx="46" cy="22" r="2" fill="#333"/>
+  <circle cx="54" cy="22" r="2" fill="#333"/>
+  <!-- antennae -->
+  <path d="M46 16 C42 10 38 8 36 6"/>
+  <path d="M54 16 C58 10 62 8 64 6"/>
+  <!-- spots on left wing -->
+  <circle cx="40" cy="38" r="4"/>
+  <circle cx="38" cy="52" r="3.5"/>
+  <circle cx="42" cy="64" r="3"/>
+  <!-- spots on right wing -->
+  <circle cx="60" cy="38" r="4"/>
+  <circle cx="62" cy="52" r="3.5"/>
+  <circle cx="58" cy="64" r="3"/>
+  <!-- legs -->
+  <path d="M32 40 C26 36 22 34 18 36" stroke-width="1.2"/>
+  <path d="M30 52 C24 50 18 50 14 52" stroke-width="1.2"/>
+  <path d="M32 62 C26 64 22 68 20 72" stroke-width="1.2"/>
+  <path d="M68 40 C74 36 78 34 82 36" stroke-width="1.2"/>
+  <path d="M70 52 C76 50 82 50 86 52" stroke-width="1.2"/>
+  <path d="M68 62 C74 64 78 68 80 72" stroke-width="1.2"/>
+</svg>

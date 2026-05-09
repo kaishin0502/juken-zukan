@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- hasu (lotus) - flower on water with round leaf -->
+  <!-- petals (layered, opening) -->
+  <path d="M50 22 C46 30 42 38 44 44 C46 46 48 46 50 44 C52 38 50 30 50 22"/>
+  <path d="M50 22 C54 30 58 38 56 44 C54 46 52 46 50 44"/>
+  <path d="M44 44 C38 40 32 38 30 42 C32 46 38 48 44 46"/>
+  <path d="M56 44 C62 40 68 38 70 42 C68 46 62 48 56 46"/>
+  <path d="M44 46 C40 44 34 44 32 48 C36 50 42 50 46 48"/>
+  <path d="M56 46 C60 44 66 44 68 48 C64 50 58 50 54 48"/>
+  <!-- center (seed pod) -->
+  <circle cx="50" cy="42" r="4" stroke-width="1"/>
+  <circle cx="49" cy="41" r="0.8" fill="#333"/>
+  <circle cx="51" cy="41" r="0.8" fill="#333"/>
+  <circle cx="50" cy="43" r="0.8" fill="#333"/>
+  <!-- stem -->
+  <path d="M50 48 C50 56 48 64 46 72" stroke-width="1.8"/>
+  <!-- water surface -->
+  <path d="M5 74 C15 72 25 74 35 72 C45 70 55 72 65 70 C75 72 85 70 95 72" stroke-width="1" opacity="0.4"/>
+  <!-- round leaf on water -->
+  <ellipse cx="72" cy="78" rx="18" ry="10"/>
+  <path d="M72 68 L72 88" stroke-width="0.8" opacity="0.5"/>
+  <!-- small leaf -->
+  <ellipse cx="22" cy="82" rx="10" ry="6"/>
+  <path d="M22 76 L22 88" stroke-width="0.8" opacity="0.5"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- dragonfly - large eyes, long body, 4 transparent wings -->
+  <!-- head with large compound eyes -->
+  <circle cx="44" cy="24" r="8"/>
+  <circle cx="56" cy="24" r="8"/>
+  <circle cx="44" cy="24" r="4" fill="#333"/>
+  <circle cx="56" cy="24" r="4" fill="#333"/>
+  <!-- thorax -->
+  <ellipse cx="50" cy="36" rx="8" ry="6"/>
+  <!-- long segmented abdomen -->
+  <path d="M50 42 L50 90" stroke-width="3"/>
+  <path d="M48 48 L52 48 M48 54 L52 54 M48 60 L52 60 M48 66 L52 66 M48 72 L52 72 M48 78 L52 78 M48 84 L52 84" stroke-width="0.8"/>
+  <!-- tail tip -->
+  <path d="M48 90 L50 94 L52 90" stroke-width="1.5"/>
+  <!-- upper wings (longer) -->
+  <path d="M44 34 C30 26 14 24 10 30 C8 36 18 42 34 42 C40 42 44 40 44 38" stroke-width="1.2"/>
+  <path d="M56 34 C70 26 86 24 90 30 C92 36 82 42 66 42 C60 42 56 40 56 38" stroke-width="1.2"/>
+  <!-- wing veins -->
+  <path d="M42 36 L20 30" stroke-width="0.6"/>
+  <path d="M42 38 L24 38" stroke-width="0.6"/>
+  <path d="M58 36 L80 30" stroke-width="0.6"/>
+  <path d="M58 38 L76 38" stroke-width="0.6"/>
+  <!-- lower wings (shorter) -->
+  <path d="M44 38 C32 36 18 38 16 44 C16 48 26 50 38 48 C42 46 44 44 44 42" stroke-width="1.2"/>
+  <path d="M56 38 C68 36 82 38 84 44 C84 48 74 50 62 48 C58 46 56 44 56 42" stroke-width="1.2"/>
+  <!-- legs -->
+  <path d="M44 36 C38 38 34 42 32 46" stroke-width="1"/>
+  <path d="M56 36 C62 38 66 42 68 46" stroke-width="1"/>
+</svg>

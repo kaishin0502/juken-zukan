@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- kabu (turnip) - white round root with green leaves -->
+  <!-- root body -->
+  <path d="M50 40 C30 42 18 54 20 66 C22 78 34 86 50 88 C66 86 78 78 80 66 C82 54 70 42 50 40"/>
+  <!-- bottom point -->
+  <path d="M50 88 C50 92 50 96 50 98" stroke-width="1.5"/>
+  <!-- root hairs -->
+  <path d="M44 88 C42 92 40 94" stroke-width="0.8"/>
+  <path d="M56 88 C58 92 60 94" stroke-width="0.8"/>
+  <!-- leaves -->
+  <path d="M50 40 C46 34 40 24 34 14 C30 8 26 6 24 8 C28 16 34 26 40 36" stroke-width="1.8"/>
+  <path d="M50 40 C50 32 50 20 50 10 C50 4 50 2 50 4 C50 12 50 26 50 36" stroke-width="1.8"/>
+  <path d="M50 40 C54 34 60 24 66 14 C70 8 74 6 76 8 C72 16 66 26 60 36" stroke-width="1.8"/>
+  <!-- leaf veins -->
+  <path d="M36 20 L34 14" stroke-width="0.8" opacity="0.4"/>
+  <path d="M38 26 L34 22" stroke-width="0.8" opacity="0.4"/>
+  <path d="M64 20 L66 14" stroke-width="0.8" opacity="0.4"/>
+  <path d="M62 26 L66 22" stroke-width="0.8" opacity="0.4"/>
+</svg>

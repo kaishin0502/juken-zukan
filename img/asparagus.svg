@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- asparagus - tall stalks with pointed tips -->
+  <!-- stalk 1 (main, center) -->
+  <path d="M42 92 L42 30" stroke-width="3"/>
+  <!-- tip 1 -->
+  <path d="M42 30 C40 24 38 18 38 12 C40 10 42 8 42 6 C42 8 44 10 46 12 C46 18 44 24 42 30"/>
+  <!-- scale leaves on stalk 1 -->
+  <path d="M42 40 C38 38 36 36" stroke-width="1.2"/>
+  <path d="M42 50 C46 48 48 46" stroke-width="1.2"/>
+  <path d="M42 60 C38 58 36 56" stroke-width="1.2"/>
+  <path d="M42 70 C46 68 48 66" stroke-width="1.2"/>
+  <!-- stalk 2 (right) -->
+  <path d="M60 92 L60 36" stroke-width="2.5"/>
+  <!-- tip 2 -->
+  <path d="M60 36 C58 30 56 24 56 18 C58 16 60 14 60 12 C60 14 62 16 64 18 C64 24 62 30 60 36"/>
+  <!-- scale leaves on stalk 2 -->
+  <path d="M60 46 C56 44 54 42" stroke-width="1.2"/>
+  <path d="M60 56 C64 54 66 52" stroke-width="1.2"/>
+  <path d="M60 66 C56 64 54 62" stroke-width="1.2"/>
+  <path d="M60 76 C64 74 66 72" stroke-width="1.2"/>
+  <!-- stalk 3 (left, shorter) -->
+  <path d="M26 92 L26 44" stroke-width="2"/>
+  <!-- tip 3 -->
+  <path d="M26 44 C24 38 24 32 24 28 C26 26 28 28 28 32 C28 38 28 42 26 44"/>
+  <!-- scale leaves on stalk 3 -->
+  <path d="M26 54 C22 52 20 50" stroke-width="1"/>
+  <path d="M26 64 C30 62 32 60" stroke-width="1"/>
+  <path d="M26 74 C22 72 20 70" stroke-width="1"/>
+</svg>

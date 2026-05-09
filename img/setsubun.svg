@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Setsubun - oni mask and soybeans -->
+  <!-- oni (demon) face -->
+  <path d="M24 40 C24 28 36 16 50 16 C64 16 76 28 76 40 C76 56 66 68 50 68 C34 68 24 56 24 40Z"/>
+  <!-- horns -->
+  <path d="M36 20 C34 12 32 4 36 2 C40 4 38 12 38 18" stroke-width="2"/>
+  <path d="M64 20 C66 12 68 4 64 2 C60 4 62 12 62 18" stroke-width="2"/>
+  <!-- curly hair -->
+  <path d="M30 26 C32 22 36 20 40 22 C42 20 46 20 48 22" stroke-width="1.5"/>
+  <path d="M52 22 C54 20 58 20 60 22 C64 20 68 22 70 26" stroke-width="1.5"/>
+  <!-- angry eyebrows -->
+  <path d="M34 32 L44 36" stroke-width="2.5"/>
+  <path d="M66 32 L56 36" stroke-width="2.5"/>
+  <!-- eyes -->
+  <circle cx="40" cy="40" r="4"/>
+  <circle cx="40" cy="40" r="2" fill="#333"/>
+  <circle cx="60" cy="40" r="4"/>
+  <circle cx="60" cy="40" r="2" fill="#333"/>
+  <!-- nose -->
+  <path d="M46 46 C48 42 52 42 54 46 C52 48 48 48 46 46Z" fill="#333"/>
+  <!-- mouth with fangs -->
+  <path d="M36 54 C42 60 50 62 58 60 C62 58 64 54 64 54"/>
+  <path d="M40 54 L42 60" stroke-width="2"/>
+  <path d="M60 54 L58 60" stroke-width="2"/>
+  <!-- beans flying -->
+  <circle cx="14" cy="30" r="2.5" fill="#333"/>
+  <circle cx="20" cy="40" r="2" fill="#333"/>
+  <circle cx="10" cy="50" r="2.5" fill="#333"/>
+  <circle cx="86" cy="34" r="2" fill="#333"/>
+  <circle cx="82" cy="46" r="2.5" fill="#333"/>
+  <circle cx="90" cy="54" r="2" fill="#333"/>
+  <!-- masu (box) for beans -->
+  <path d="M34 78 L66 78 L62 92 L38 92Z" stroke-width="2"/>
+  <path d="M38 78 L40 92" stroke-width="0.8"/>
+  <path d="M62 78 L60 92" stroke-width="0.8"/>
+  <!-- beans in box -->
+  <circle cx="46" cy="82" r="2" fill="#333"/>
+  <circle cx="52" cy="80" r="2" fill="#333"/>
+  <circle cx="56" cy="84" r="2" fill="#333"/>
+  <circle cx="48" cy="86" r="2" fill="#333"/>
+</svg>

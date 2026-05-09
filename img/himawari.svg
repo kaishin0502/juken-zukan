@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- sunflower - large round center with petals -->
+  <circle cx="50" cy="32" r="10"/>
+  <!-- crosshatch pattern in center -->
+  <path d="M43 29 L57 29 M43 32 L57 32 M43 35 L57 35" stroke-width="0.8"/>
+  <path d="M47 23 L47 41 M50 22 L50 42 M53 23 L53 41" stroke-width="0.8"/>
+  <!-- petals around -->
+  <path d="M50 22 C48 16 46 10 50 8 C54 10 52 16 50 22"/>
+  <path d="M57 24 C62 20 66 14 70 16 C70 20 64 22 57 24"/>
+  <path d="M60 32 C66 30 72 28 74 32 C72 36 66 34 60 32"/>
+  <path d="M57 40 C62 44 66 50 64 52 C60 52 58 46 57 40"/>
+  <path d="M50 42 C52 48 54 54 50 56 C46 54 48 48 50 42"/>
+  <path d="M43 40 C38 44 34 50 36 52 C40 52 42 46 43 40"/>
+  <path d="M40 32 C34 34 28 36 26 32 C28 28 34 30 40 32"/>
+  <path d="M43 24 C38 20 34 14 36 12 C40 12 42 18 43 24"/>
+  <!-- stem -->
+  <path d="M50 42 L50 88"/>
+  <!-- large leaves -->
+  <path d="M50 58 C42 50 28 48 24 56 C30 58 28 62 32 66 C36 62 42 60 50 62" stroke-width="1.3"/>
+  <path d="M50 70 C58 62 72 60 76 68 C70 70 72 74 68 78 C64 74 58 72 50 74" stroke-width="1.3"/>
+</svg>

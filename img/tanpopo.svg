@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- dandelion - round fluffy head with many thin petals -->
+  <circle cx="50" cy="30" r="6"/>
+  <!-- radiating petals -->
+  <path d="M50 24 L50 12"/><path d="M56 26 L64 16"/><path d="M58 30 L70 28"/>
+  <path d="M56 34 L64 44"/><path d="M50 36 L50 44"/><path d="M44 34 L36 44"/>
+  <path d="M42 30 L30 28"/><path d="M44 26 L36 16"/>
+  <!-- petal tips - small lines at ends -->
+  <path d="M48 12 L52 12" stroke-width="1"/><path d="M63 14 L66 18" stroke-width="1"/>
+  <path d="M69 26 L71 30" stroke-width="1"/><path d="M63 43 L66 46" stroke-width="1"/>
+  <path d="M48 43 L52 45" stroke-width="1"/><path d="M34 43 L37 46" stroke-width="1"/>
+  <path d="M29 26 L31 30" stroke-width="1"/><path d="M34 14 L37 18" stroke-width="1"/>
+  <!-- stem -->
+  <path d="M50 44 L50 86"/>
+  <!-- jagged leaf -->
+  <path d="M50 62 C46 58 38 56 32 58 C36 60 34 64 30 66 C34 66 36 68 34 72 C38 70 42 68 50 66" stroke-width="1.2"/>
+</svg>

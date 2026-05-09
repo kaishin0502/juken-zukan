@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- New Year's Eve - temple bell (joya no kane) and soba -->
+  <!-- temple bell (kane) -->
+  <path d="M30 14 L70 14" stroke-width="2"/>
+  <path d="M34 14 L34 8 L66 8 L66 14" stroke-width="1.5"/>
+  <!-- bell body -->
+  <path d="M32 14 C28 20 26 30 26 40 C26 52 30 58 34 60 L66 60 C70 58 74 52 74 40 C74 30 72 20 68 14"/>
+  <!-- bell decorations -->
+  <path d="M32 24 L68 24" stroke-width="0.8"/>
+  <path d="M30 34 L70 34" stroke-width="0.8"/>
+  <!-- bell ring/knob at bottom -->
+  <circle cx="50" cy="56" r="4" fill="#333"/>
+  <!-- striking log -->
+  <path d="M78 36 L92 28" stroke-width="3"/>
+  <circle cx="78" cy="36" r="4"/>
+  <!-- rope for striking -->
+  <path d="M92 28 C94 24 94 20 92 16" stroke-width="1.5"/>
+  <!-- soba bowl below -->
+  <path d="M26 72 C26 68 36 66 50 66 C64 66 74 68 74 72"/>
+  <path d="M22 72 C22 76 34 80 50 80 C66 80 78 76 78 72"/>
+  <path d="M22 72 L26 72 M74 72 L78 72"/>
+  <!-- soba noodles (wavy lines) -->
+  <path d="M34 70 C38 72 42 68 46 70 C50 72 54 68 58 70 C62 72 66 68 68 70" stroke-width="1"/>
+  <path d="M36 72 C40 74 44 70 48 72 C52 74 56 70 60 72 C64 74 66 72 68 72" stroke-width="1"/>
+  <!-- chopsticks -->
+  <path d="M42 66 L36 56" stroke-width="1.5"/>
+  <path d="M46 66 L40 56" stroke-width="1.5"/>
+  <!-- steam -->
+  <path d="M44 62 C42 58 44 56 44 54" stroke-width="0.8"/>
+  <path d="M50 62 C50 58 52 56 50 54" stroke-width="0.8"/>
+  <path d="M56 62 C58 58 56 56 56 54" stroke-width="0.8"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- moon viewing - full moon, dango, susuki grass -->
+  <!-- full moon -->
+  <circle cx="50" cy="28" r="20"/>
+  <!-- rabbit silhouette on moon -->
+  <path d="M44 24 C42 18 40 14 42 12 C44 14 44 18 46 22" stroke-width="1" fill="#333" opacity="0.3"/>
+  <path d="M48 24 C50 18 52 14 50 12 C48 14 48 18 46 22" stroke-width="1" fill="#333" opacity="0.3"/>
+  <ellipse cx="47" cy="28" rx="5" ry="4" fill="#333" opacity="0.3"/>
+  <!-- dango on stand -->
+  <!-- stand -->
+  <path d="M20 82 L38 82" stroke-width="2"/>
+  <path d="M22 82 L22 72 L36 72 L36 82"/>
+  <!-- dango (3 on a stick) -->
+  <circle cx="29" cy="66" r="5"/>
+  <circle cx="29" cy="56" r="5"/>
+  <circle cx="29" cy="46" r="5"/>
+  <path d="M29 42 L29 72" stroke-width="1"/>
+  <!-- susuki (pampas grass) -->
+  <path d="M74 86 L74 40" stroke-width="1.5"/>
+  <path d="M74 40 C70 34 68 28 70 24" stroke-width="1.2"/>
+  <path d="M74 44 C78 38 80 32 78 28" stroke-width="1.2"/>
+  <path d="M74 48 C70 42 66 38 64 34" stroke-width="1.2"/>
+  <!-- susuki fuzzy tops -->
+  <path d="M70 24 C68 20 68 16 70 14" stroke-width="1"/>
+  <path d="M70 24 L68 18 M70 22 L72 18" stroke-width="0.8"/>
+  <path d="M78 28 C80 24 80 20 78 18" stroke-width="1"/>
+  <path d="M78 28 L80 22 M78 26 L76 22" stroke-width="0.8"/>
+  <path d="M64 34 C62 30 62 26 64 24" stroke-width="1"/>
+  <!-- more susuki stalks -->
+  <path d="M80 86 L80 46" stroke-width="1.2"/>
+  <path d="M80 46 C84 40 86 34 84 30" stroke-width="1"/>
+  <path d="M84 30 L86 24 M84 28 L82 24" stroke-width="0.8"/>
+</svg>

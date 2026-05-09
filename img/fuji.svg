@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- fuji (wisteria) - hanging flower clusters from vine -->
+  <!-- main vine/branch -->
+  <path d="M10 15 C30 12 50 18 70 14 C80 13 90 16 95 20" stroke-width="2.5"/>
+  <!-- hanging cluster left -->
+  <path d="M25 15 L25 22"/>
+  <ellipse cx="25" cy="26" rx="5" ry="4"/>
+  <ellipse cx="25" cy="34" rx="6" ry="4.5"/>
+  <ellipse cx="25" cy="42" rx="7" ry="5"/>
+  <ellipse cx="25" cy="50" rx="6" ry="4.5"/>
+  <ellipse cx="25" cy="57" rx="4" ry="3"/>
+  <circle cx="25" cy="62" r="2"/>
+  <!-- hanging cluster center -->
+  <path d="M50 18 L50 26"/>
+  <ellipse cx="50" cy="30" rx="5" ry="4"/>
+  <ellipse cx="50" cy="38" rx="7" ry="5"/>
+  <ellipse cx="50" cy="47" rx="8" ry="5.5"/>
+  <ellipse cx="50" cy="56" rx="7" ry="5"/>
+  <ellipse cx="50" cy="64" rx="5" ry="4"/>
+  <ellipse cx="50" cy="70" rx="3" ry="2.5"/>
+  <!-- hanging cluster right -->
+  <path d="M72 14 L72 20"/>
+  <ellipse cx="72" cy="24" rx="4" ry="3.5"/>
+  <ellipse cx="72" cy="31" rx="5.5" ry="4"/>
+  <ellipse cx="72" cy="39" rx="6" ry="4.5"/>
+  <ellipse cx="72" cy="46" rx="5" ry="4"/>
+  <ellipse cx="72" cy="52" rx="3.5" ry="3"/>
+  <!-- leaves at top -->
+  <path d="M15 14 C12 8 8 6 4 8 C8 12 12 14 15 14" fill="none"/>
+  <path d="M40 16 C38 10 34 7 30 8 C33 13 37 16 40 16" fill="none"/>
+  <path d="M82 16 C84 10 88 8 92 10 C88 14 84 16 82 16" fill="none"/>
+</svg>

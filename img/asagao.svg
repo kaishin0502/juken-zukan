@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- morning glory - trumpet/funnel shaped flower -->
+  <circle cx="50" cy="28" r="18"/>
+  <!-- inner star pattern -->
+  <path d="M50 16 L48 28 L38 18" stroke-width="1"/>
+  <path d="M38 18 L48 28 L34 26" stroke-width="1"/>
+  <path d="M34 26 L48 28 L40 40" stroke-width="1"/>
+  <path d="M40 40 L50 28 L60 40" stroke-width="1"/>
+  <path d="M60 40 L52 28 L66 26" stroke-width="1"/>
+  <path d="M66 26 L52 28 L62 18" stroke-width="1"/>
+  <path d="M62 18 L52 28 L50 16" stroke-width="1"/>
+  <circle cx="50" cy="28" r="4" stroke-width="1"/>
+  <!-- vine stem curving -->
+  <path d="M50 46 C52 54 56 60 52 70 C48 78 50 84 54 88"/>
+  <!-- heart-shaped leaves -->
+  <path d="M52 60 C46 54 36 52 32 58 C34 64 42 64 50 60" stroke-width="1.2"/>
+  <path d="M52 60 L40 56" stroke-width="0.8"/>
+  <path d="M54 76 C60 70 70 68 74 74 C72 80 64 80 56 76" stroke-width="1.2"/>
+  <!-- tendril -->
+  <path d="M54 88 C56 86 58 88 56 90" stroke-width="1"/>
+</svg>

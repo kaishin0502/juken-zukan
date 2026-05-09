@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- grasshopper - elongated, large back legs -->
+  <!-- head (triangular, pointed) -->
+  <path d="M20 40 C18 36 20 30 26 28 C32 26 36 30 36 36 C36 42 32 46 26 46 C22 46 20 44 20 40Z"/>
+  <!-- eye -->
+  <circle cx="28" cy="34" r="3" fill="#333"/>
+  <!-- antennae -->
+  <path d="M22 30 C16 22 10 16 6 14"/>
+  <!-- mouth parts -->
+  <path d="M20 42 L16 44 L18 46"/>
+  <!-- thorax -->
+  <path d="M36 32 L56 30 L58 44 L36 46Z"/>
+  <!-- wing -->
+  <path d="M40 32 C44 26 54 22 64 24 C72 26 76 30 74 36" stroke-width="1"/>
+  <path d="M42 34 L62 28" stroke-width="0.6"/>
+  <!-- abdomen -->
+  <path d="M58 34 C66 32 76 34 82 38 C86 42 86 46 82 50 C76 52 66 50 58 46"/>
+  <path d="M64 36 L64 48 M70 36 L70 48 M76 38 L76 48" stroke-width="0.7"/>
+  <!-- front legs -->
+  <path d="M38 46 C36 52 32 58 28 62" stroke-width="1.2"/>
+  <path d="M46 46 C44 52 40 58 36 64" stroke-width="1.2"/>
+  <!-- large back jumping legs (Z-shaped) -->
+  <path d="M56 44 C62 46 68 42 72 34" stroke-width="2"/>
+  <path d="M72 34 C76 42 80 56 84 68" stroke-width="2"/>
+  <path d="M84 68 L90 72" stroke-width="1.5"/>
+  <!-- spines on back leg -->
+  <path d="M78 50 L80 48 M80 56 L82 54 M82 62 L84 60" stroke-width="0.8"/>
+</svg>

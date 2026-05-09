@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- rapeseed/canola - cluster of small 4-petal flowers -->
+  <!-- flower 1 top -->
+  <path d="M50 14 C48 10 46 8 50 6 C54 8 52 10 50 14"/>
+  <path d="M50 14 C46 12 44 10 46 6"/>
+  <path d="M50 14 C54 12 56 10 54 6"/>
+  <path d="M46 10 L54 10" stroke-width="1"/>
+  <!-- flower 2 left -->
+  <path d="M40 24 C38 20 36 18 40 16 C44 18 42 20 40 24"/>
+  <path d="M40 24 C36 22 34 20 36 16"/>
+  <path d="M40 24 C44 22 46 20 44 16"/>
+  <!-- flower 3 right -->
+  <path d="M58 22 C56 18 54 16 58 14 C62 16 60 18 58 22"/>
+  <path d="M58 22 C54 20 52 18 54 14"/>
+  <path d="M58 22 C62 20 64 18 62 14"/>
+  <!-- buds -->
+  <circle cx="48" cy="28" r="2.5"/>
+  <circle cx="55" cy="30" r="2"/>
+  <!-- main stem -->
+  <path d="M50 18 L50 86"/>
+  <path d="M40 24 L50 32"/>
+  <path d="M58 22 L50 30"/>
+  <!-- leaves -->
+  <path d="M50 50 C42 44 32 44 28 50 C34 48 38 50 42 54" stroke-width="1.2"/>
+  <path d="M50 64 C58 58 68 58 72 64 C66 62 62 64 58 68" stroke-width="1.2"/>
+</svg>

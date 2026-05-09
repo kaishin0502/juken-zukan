@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- sports day - running child, flags -->
+  <!-- bunting/flags at top -->
+  <path d="M4 12 L96 12" stroke-width="1.5"/>
+  <path d="M10 12 L16 24 L22 12" fill="none"/><path d="M10 12 L16 24 L22 12Z" stroke-width="0.8"/>
+  <path d="M26 12 L32 24 L38 12"/><path d="M26 12 L32 24 L38 12Z" stroke-width="0.8"/>
+  <path d="M42 12 L48 24 L54 12"/><path d="M42 12 L48 24 L54 12Z" stroke-width="0.8"/>
+  <path d="M58 12 L64 24 L70 12"/><path d="M58 12 L64 24 L70 12Z" stroke-width="0.8"/>
+  <path d="M74 12 L80 24 L86 12"/><path d="M74 12 L80 24 L86 12Z" stroke-width="0.8"/>
+  <!-- running child 1 -->
+  <circle cx="36" cy="42" r="8"/>
+  <circle cx="34" cy="41" r="1.2" fill="#333"/>
+  <circle cx="38" cy="41" r="1.2" fill="#333"/>
+  <!-- headband -->
+  <path d="M28 40 L44 40" stroke-width="2"/>
+  <path d="M44 40 L48 38 L46 42" stroke-width="1"/>
+  <!-- body -->
+  <path d="M36 50 L36 66"/>
+  <!-- arms (running pose) -->
+  <path d="M36 54 L26 48"/>
+  <path d="M36 54 L46 60"/>
+  <!-- legs (running) -->
+  <path d="M36 66 L26 78"/>
+  <path d="M36 66 L48 74"/>
+  <!-- running child 2 -->
+  <circle cx="68" cy="46" r="7"/>
+  <circle cx="66" cy="45" r="1" fill="#333"/>
+  <circle cx="70" cy="45" r="1" fill="#333"/>
+  <path d="M60 44 L76 44" stroke-width="2"/>
+  <path d="M76 44 L80 42 L78 46" stroke-width="1"/>
+  <path d="M68 53 L68 66"/>
+  <path d="M68 57 L60 52"/>
+  <path d="M68 57 L78 62"/>
+  <path d="M68 66 L58 78"/>
+  <path d="M68 66 L78 76"/>
+  <!-- ground line -->
+  <path d="M0 84 L100 84" stroke-width="1"/>
+  <!-- finish line -->
+  <path d="M90 30 L90 84" stroke-width="2"/>
+  <path d="M86 30 L94 30" stroke-width="2"/>
+</svg>
