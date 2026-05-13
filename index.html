@@ -3475,7 +3475,7 @@ function startDailyChallenge() {
   const today = getTodayKey();
   // Use date as seed for consistent daily category
   const dayNum = new Date().getDate();
-  const cats = ['flower', 'insect', 'event', 'food', 'all'];
+  const cats = ['flower', 'insect', 'event', 'food', 'tool', 'all'];
   const dailyCat = cats[dayNum % cats.length];
 
   // Start quiz with daily flag
@@ -4265,7 +4265,7 @@ function selectCategory(cat) {
 
 function startQuiz(category, difficulty) {
   difficulty = difficulty || 'normal';
-  let pool = category === 'all' ? DATA.filter(d => QUIZ_CATS.has(d.category) && d.category !== 'tool') : DATA.filter(d => d.category === category);
+  let pool = category === 'all' ? DATA.filter(d => QUIZ_CATS.has(d.category)) : DATA.filter(d => d.category === category);
   const qCount = QUIZ_COUNT[difficulty] || 5;
   pool = shuffle(pool).slice(0, qCount);
 
@@ -4321,7 +4321,7 @@ function startQuiz(category, difficulty) {
   document.getElementById('quiz-header-title').textContent = catNames[category] + " " + diffNames[difficulty];
 
   // Preload all images that might appear in this quiz (including distractors)
-  const quizPool = category === 'all' ? DATA.filter(d => QUIZ_CATS.has(d.category) && d.category !== 'tool') : DATA.filter(d => d.category === category);
+  const quizPool = category === 'all' ? DATA.filter(d => QUIZ_CATS.has(d.category)) : DATA.filter(d => d.category === category);
   preloadImages(quizPool.map(d => d.name));
 
   showScreen('quiz');
