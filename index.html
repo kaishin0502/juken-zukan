@@ -3571,7 +3571,7 @@ function getCatAccuracy(category) {
   return stats[category].correct / stats[category].total;
 }
 function getWeakestCategory() {
-  const cats = ['flower', 'insect', 'event', 'food'];
+  const cats = ['flower', 'insect', 'event', 'food', 'tool'];
   const stats = getCatStats();
   let weakest = null, lowestAcc = 1.1;
   for (const c of cats) {
@@ -3584,8 +3584,8 @@ function updateMixHint() {
   const el = document.getElementById('mix-weak-hint');
   if (!el) return;
   const stats = getCatStats();
-  const cats = ['flower', 'insect', 'event', 'food'];
-  const catLabels = { flower: 'はな', insect: 'むし', event: 'ぎょうじ', food: 'やさい' };
+  const cats = ['flower', 'insect', 'event', 'food', 'tool'];
+  const catLabels = { flower: 'はな', insect: 'むし', event: 'ぎょうじ', food: 'やさい', tool: 'どうぐ' };
   const hasData = cats.some(c => stats[c] && stats[c].total > 0);
   if (!hasData) { el.textContent = 'ぜんぶ まぜて クイズ！'; return; }
   const weakest = getWeakestCategory();
@@ -3596,7 +3596,7 @@ function updateMixHint() {
 // ===== MIX QUIZ (なんでもクイズ) =====
 function startMixQuiz() {
   Audio.ensureCtx();
-  const cats = ['flower', 'insect', 'event', 'food'];
+  const cats = ['flower', 'insect', 'event', 'food', 'tool'];
   const qCount = 7;
 
   // Build weighted pool: lower accuracy = higher weight
@@ -3625,9 +3625,16 @@ function startMixQuiz() {
   }
 
   // Generate questions with varied types (including nakamawake)
-  const types = ['season', 'oddone', 'nakamawake', 'reverse', 'season', 'oddone', 'reverse'];
+  const seasonTypes = ['season', 'oddone', 'nakamawake', 'reverse', 'season', 'oddone', 'reverse'];
+  const toolTypes = ['name', 'image'];
   const questions = selected.map((item, i) => {
-    const t = types[i % types.length];
+    // Tool items can't use season-based questions — use name/image instead
+    if (item.category === 'tool') {
+      const t = toolTypes[i % toolTypes.length];
+      if (t === 'image') return { type: 'reverse', season: '', correctItem: item, category: 'tool' };
+      return { type: 'name', item: item };
+    }
+    const t = seasonTypes[i % seasonTypes.length];
     if (t === 'nakamawake') return generateNakamawakeQ();
     if (t === 'oddone') return { type: 'oddone', item: item };
     if (t === 'reverse') return { type: 'reverse', season: item.season, correctItem: item, category: item.category };
@@ -4769,6 +4776,7 @@ function buildMixStatsHTML() {
     { id: 'insect', label: 'むし', icon: 'bug_report' },
     { id: 'event', label: 'ぎょうじ', icon: 'celebration' },
     { id: 'food', label: 'やさい', icon: 'nutrition' },
+    { id: 'tool', label: 'どうぐ', icon: 'handyman' },
   ];
   let html = '<div style="background:#f5f5f5;border-radius:12px;padding:12px;margin-bottom:16px;">';
   html += `<div style="font-size:0.85rem;font-weight:700;margin-bottom:8px;text-align:center;">${ic('bar_chart','')} カテゴリべつ せいかいりつ</div>`;
@@ -4796,6 +4804,7 @@ function buildParentReport() {
     { id: 'insect', label: 'むし', icon: 'bug_report' },
     { id: 'event', label: 'ぎょうじ', icon: 'celebration' },
     { id: 'food', label: 'やさい', icon: 'nutrition' },
+    { id: 'tool', label: 'どうぐ', icon: 'handyman' },
   ];
   const hasData = cats.some(c => catStats[c.id] && catStats[c.id].total > 0);
   if (!hasData) return '';
@@ -4813,7 +4822,7 @@ function buildParentReport() {
     </div>`;
   }
   const weakest = getWeakestCategory();
-  const weakLabel = { flower: 'はな', insect: 'むし', event: 'ぎょうじ', food: 'やさい・くだもの' };
+  const weakLabel = { flower: 'はな', insect: 'むし', event: 'ぎょうじ', food: 'やさい・くだもの', tool: 'どうぐ' };
   if (weakest && catStats[weakest] && catStats[weakest].total >= 3) {
     const acc = Math.round(getCatAccuracy(weakest) * 100);
     html += `<div class="parent-report-weak">${ic('lightbulb','')} <strong>${weakLabel[weakest]}</strong> が にがて（${acc}%）→ ずかん で ふくしゅう しよう！</div>`;
