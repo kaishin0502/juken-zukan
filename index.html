@@ -3631,7 +3631,7 @@ function startMixQuiz() {
     // Tool items can't use season-based questions — use name/image instead
     if (item.category === 'tool') {
       const t = toolTypes[i % toolTypes.length];
-      if (t === 'image') return { type: 'reverse', season: '', correctItem: item, category: 'tool' };
+      if (t === 'image') return { type: 'image', item: item };
       return { type: 'name', item: item };
     }
     const t = seasonTypes[i % seasonTypes.length];
