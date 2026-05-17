@@ -2254,6 +2254,20 @@ const DATA = [
   { name: "どんぐり", season: "", category: "tool", hint: "きの みの こと。ころころ してて こまが つくれるよ。", romaji: "donguri" },
   { name: "いね", season: "", category: "tool", hint: "おこめが できる しょくぶつ。たんぼで そだてるよ。", romaji: "ine" },
   { name: "てぶくろ", season: "", category: "tool", hint: "てに はめて さむさ から まもる どうぐ。ふゆに つかうよ。", romaji: "tebukuro" },
+  // ふゆ の ぎょうじ・あそび
+  { name: "ゆきだるま", season: "winter", category: "event", hint: "ゆきを まるめて つくるよ。にだんに かさねて かおを つけるよ。", romaji: "yukidaruma" },
+  { name: "スケート", season: "winter", category: "event", hint: "こおりの うえを すべる あそび。ふゆの スポーツだよ。", romaji: "sukeeto" },
+  { name: "スキー", season: "winter", category: "event", hint: "ゆきやまで いたを はいて すべるよ。ふゆの スポーツだよ。", romaji: "sukii" },
+  { name: "ししまい", season: "winter", category: "event", hint: "おしょうがつに おどる みどりの しし。あたまを かまれると えんぎがいいよ。", romaji: "shishimai" },
+  { name: "いもほり", season: "autumn", category: "event", hint: "あきに はたけで さつまいもを ほるよ。えんそくで いくよ。", romaji: "imohori" },
+  // のりもの・そのた
+  { name: "ききゅう", season: "", category: "tool", hint: "おおきな ふうせんに かごが ついた のりもの。そらを とぶよ。", romaji: "kikyuu" },
+  // むし
+  { name: "みのむし", season: "autumn", category: "insect", hint: "はっぱや えだで ふくろを つくって なかに はいる むし。きから ぶらさがるよ。", romaji: "minomushi" },
+  // どうぶつ（とり）
+  { name: "たか", season: "", category: "animal", hint: "そらを とぶ おおきな とり。するどい めで えものを みつけるよ。", romaji: "taka" },
+  { name: "わし", season: "", category: "animal", hint: "おおきくて つよい とり。あたまが しろい のが とくちょうだよ。", romaji: "washi" },
+  { name: "くじゃく", season: "", category: "animal", hint: "おおきくて きれいな はねを ひろげる とり。おすが はなやかだよ。", romaji: "kujaku" },
 ];
 
 const SEASONS = [
@@ -2270,12 +2284,13 @@ const CATEGORIES = [
   { id: "event", label: "ぎょうじ" },
   { id: "food", label: "やさい・くだもの" },
   { id: "tool", label: "どうぐ" },
+  { id: "animal", label: "どうぶつ" },
 ];
 
 const SEASON_NAMES = { spring: "はる", summer: "なつ", autumn: "あき", winter: "ふゆ" };
 
 // クイズ・図鑑・フラッシュカードで使うカテゴリ
-const QUIZ_CATS = new Set(['flower', 'insect', 'event', 'food', 'tool']);
+const QUIZ_CATS = new Set(['flower', 'insect', 'event', 'food', 'tool', 'animal']);
 
 // Icon helper — returns Material Symbols Rounded HTML
 function ic(name, cls) { return `<span class="ms ${cls||''}">${name}</span>`; }
@@ -4794,6 +4809,7 @@ function buildMixStatsHTML() {
     { id: 'event', label: 'ぎょうじ', icon: 'celebration' },
     { id: 'food', label: 'やさい', icon: 'nutrition' },
     { id: 'tool', label: 'どうぐ', icon: 'handyman' },
+    { id: 'animal', label: 'どうぶつ', icon: 'pets' },
   ];
   let html = '<div style="background:#f5f5f5;border-radius:12px;padding:12px;margin-bottom:16px;">';
   html += `<div style="font-size:0.85rem;font-weight:700;margin-bottom:8px;text-align:center;">${ic('bar_chart','')} カテゴリべつ せいかいりつ</div>`;
@@ -4822,6 +4838,7 @@ function buildParentReport() {
     { id: 'event', label: 'ぎょうじ', icon: 'celebration' },
     { id: 'food', label: 'やさい', icon: 'nutrition' },
     { id: 'tool', label: 'どうぐ', icon: 'handyman' },
+    { id: 'animal', label: 'どうぶつ', icon: 'pets' },
   ];
   const hasData = cats.some(c => catStats[c.id] && catStats[c.id].total > 0);
   if (!hasData) return '';
