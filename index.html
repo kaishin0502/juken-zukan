@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta http-equiv="Cache-Control" content="public, max-age=86400">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0">
 <title>きせつクイズ - しょうがっこう じゅけん</title>
 <style>
@@ -1109,7 +1109,13 @@ body {
 .shiri-hint-btn {
   display: block; margin: 0 auto 8px; padding: 10px 24px;
   background: #fff8e1; border: 2px dashed #ffcc80; border-radius: 20px;
-  font-size: 1rem; color: #888; cursor: pointer; transition: all 0.2s;
+  font-size: 1rem; color: #888; cursor: pointer; transition: all 0.3s;
+}
+.shiri-hint-btn.shiri-hint-hidden {
+  opacity: 0; pointer-events: none; transform: scale(0.8);
+}
+.shiri-hint-btn.shiri-hint-visible {
+  opacity: 1; pointer-events: auto; transform: scale(1);
 }
 .shiri-hint-btn:active { transform: scale(0.95); }
 .shiri-hint-btn.revealed {
@@ -1506,7 +1512,11 @@ body {
 .shiriord-hint-btn {
   display: block; margin: 0 auto 12px; padding: 8px 20px;
   background: #fff8e1; border: 2px dashed #ffcc80; border-radius: 20px;
-  font-size: 0.9rem; color: #888; cursor: pointer; transition: all 0.2s;
+  font-size: 0.9rem; color: #888; cursor: pointer; transition: all 0.3s;
+  opacity: 0; pointer-events: none; transform: scale(0.8);
+}
+.shiriord-hint-btn.shiriord-hint-visible {
+  opacity: 1; pointer-events: auto; transform: scale(1);
 }
 .shiriord-hint-btn:active { transform: scale(0.95); }
 .shiriord-hint-btn.revealed {
@@ -2158,85 +2168,85 @@ const DATA = [
   { name: "かぶ", season: "winter", category: "food", hint: "しろくて まるい やさい。はっぱ も たべられるよ。おおきな かぶ の おはなし が あるよ。", romaji: "kabu" },
 
   // === TOOLS (しりとり・ならべかえ専用) ===
-  { name: "うちわ", season: "", category: "tool", hint: "", romaji: "uchiwa" },
-  { name: "ふろしき", season: "", category: "tool", hint: "", romaji: "furoshiki" },
-  { name: "こま", season: "", category: "tool", hint: "", romaji: "koma" },
-  { name: "けんだま", season: "", category: "tool", hint: "", romaji: "kendama" },
-  { name: "たいこ", season: "", category: "tool", hint: "", romaji: "taiko" },
-  { name: "はさみ", season: "", category: "tool", hint: "", romaji: "hasami" },
-  { name: "ほうき", season: "", category: "tool", hint: "", romaji: "houki" },
-  { name: "バケツ", season: "", category: "tool", hint: "", romaji: "baketsu" },
-  { name: "スコップ", season: "", category: "tool", hint: "", romaji: "sukoppu" },
-  { name: "のこぎり", season: "", category: "tool", hint: "", romaji: "nokogiri" },
-  { name: "かなづち", season: "", category: "tool", hint: "", romaji: "kanaduchi" },
-  { name: "ふえ", season: "", category: "tool", hint: "", romaji: "fue" },
-  { name: "ラッパ", season: "", category: "tool", hint: "", romaji: "rappa" },
-  { name: "むしめがね", season: "", category: "tool", hint: "", romaji: "mushimegane" },
-  { name: "ランドセル", season: "", category: "tool", hint: "", romaji: "randoseru" },
-  { name: "えんぴつ", season: "", category: "tool", hint: "", romaji: "enpitsu" },
-  { name: "かんな", season: "", category: "tool", hint: "", romaji: "kanna" },
-  { name: "げた", season: "", category: "tool", hint: "", romaji: "geta" },
-  { name: "かさ", season: "", category: "tool", hint: "", romaji: "kasa" },
-  { name: "ピアノ", season: "", category: "tool", hint: "", romaji: "piano" },
-  { name: "かるた", season: "", category: "tool", hint: "", romaji: "karuta" },
-  { name: "ふで", season: "", category: "tool", hint: "", romaji: "fude" },
-  { name: "たこ", season: "", category: "tool", hint: "", romaji: "tako" },
-  { name: "おりがみ", season: "", category: "tool", hint: "", romaji: "origami" },
-  { name: "きゅうす", season: "", category: "tool", hint: "", romaji: "kyuusu" },
-  { name: "ストーブ", season: "", category: "tool", hint: "", romaji: "sutoobu" },
-  { name: "ものさし", season: "", category: "tool", hint: "", romaji: "monosashi" },
-  { name: "コンパス", season: "", category: "tool", hint: "", romaji: "konpasu" },
-  { name: "やかん", season: "", category: "tool", hint: "", romaji: "yakan" },
-  { name: "ふうりん", season: "", category: "tool", hint: "", romaji: "furin" },
-  { name: "せんぷうき", season: "", category: "tool", hint: "", romaji: "senpuki" },
+  { name: "うちわ", season: "", category: "tool", hint: "あおいで かぜを おこす どうぐ。なつ に すずしく なるよ。", romaji: "uchiwa" },
+  { name: "ふろしき", season: "", category: "tool", hint: "ものを つつんで はこぶ ぬの。むすんで つかうよ。", romaji: "furoshiki" },
+  { name: "こま", season: "", category: "tool", hint: "くるくる まわして あそぶ おもちゃ。おしょうがつ に まわすよ。", romaji: "koma" },
+  { name: "けんだま", season: "", category: "tool", hint: "たまを けん に のせて あそぶよ。むかしからの おもちゃ。", romaji: "kendama" },
+  { name: "たいこ", season: "", category: "tool", hint: "ばちで たたいて おとを だす がっき。どんどん って なるよ。", romaji: "taiko" },
+  { name: "はさみ", season: "", category: "tool", hint: "かみや ぬのを きる どうぐ。ふたつの は が あるよ。", romaji: "hasami" },
+  { name: "ほうき", season: "", category: "tool", hint: "ゆかや みちを はく おそうじ どうぐ。ごみを あつめるよ。", romaji: "houki" },
+  { name: "バケツ", season: "", category: "tool", hint: "みずを いれて はこぶ いれもの。おそうじ に つかうよ。", romaji: "baketsu" },
+  { name: "スコップ", season: "", category: "tool", hint: "つちを ほったり すなを すくう どうぐ。こうえん で つかうよ。", romaji: "sukoppu" },
+  { name: "のこぎり", season: "", category: "tool", hint: "きを きる どうぐ。ぎこぎこ うごかして つかうよ。", romaji: "nokogiri" },
+  { name: "かなづち", season: "", category: "tool", hint: "くぎを うつ どうぐ。とんとん って たたくよ。", romaji: "kanaduchi" },
+  { name: "ふえ", season: "", category: "tool", hint: "いきを ふいて おとを だす がっき。ぴーぴー なるよ。", romaji: "fue" },
+  { name: "ラッパ", season: "", category: "tool", hint: "いきを ふいて おとを だす がっき。ぱらぱっぱ って なるよ。", romaji: "rappa" },
+  { name: "むしめがね", season: "", category: "tool", hint: "ちいさい ものを おおきく みる どうぐ。レンズ が ついてるよ。", romaji: "mushimegane" },
+  { name: "ランドセル", season: "", category: "tool", hint: "しょうがくせい が せおう かばん。きょうかしょ を いれるよ。", romaji: "randoseru" },
+  { name: "えんぴつ", season: "", category: "tool", hint: "じや え を かく どうぐ。けずって つかうよ。", romaji: "enpitsu" },
+  { name: "かんな", season: "", category: "tool", hint: "きの ひょうめんを けずって つるつるに する どうぐ。だいくさん が つかうよ。", romaji: "kanna" },
+  { name: "げた", season: "", category: "tool", hint: "きで できた はきもの。からころ と おとが なるよ。", romaji: "geta" },
+  { name: "かさ", season: "", category: "tool", hint: "あめの ひに さして ぬれない ように するよ。", romaji: "kasa" },
+  { name: "ピアノ", season: "", category: "tool", hint: "けんばんを おして おとを だす がっき。しろと くろの けんばん が あるよ。", romaji: "piano" },
+  { name: "かるた", season: "", category: "tool", hint: "よみふだ を きいて えふだ を とる あそび。おしょうがつ に するよ。", romaji: "karuta" },
+  { name: "ふで", season: "", category: "tool", hint: "すみ を つけて じを かく どうぐ。しょどう で つかうよ。", romaji: "fude" },
+  { name: "たこ", season: "", category: "tool", hint: "かぜで そらに あげて あそぶよ。いとで つながってるよ。", romaji: "tako" },
+  { name: "おりがみ", season: "", category: "tool", hint: "かみを おって いろんな かたちを つくるよ。つるが ゆうめい。", romaji: "origami" },
+  { name: "きゅうす", season: "", category: "tool", hint: "おちゃを いれる どうぐ。よこに とって が ついてるよ。", romaji: "kyuusu" },
+  { name: "ストーブ", season: "", category: "tool", hint: "へやを あたためる きかい。ふゆに つかうよ。", romaji: "sutoobu" },
+  { name: "ものさし", season: "", category: "tool", hint: "ながさを はかる どうぐ。せんを ひく ときにも つかうよ。", romaji: "monosashi" },
+  { name: "コンパス", season: "", category: "tool", hint: "まるを きれいに かく どうぐ。はりと えんぴつ が ついてるよ。", romaji: "konpasu" },
+  { name: "やかん", season: "", category: "tool", hint: "おゆを わかす どうぐ。ぴーっと ふえが なるよ。", romaji: "yakan" },
+  { name: "ふうりん", season: "", category: "tool", hint: "かぜで りんりん と なる どうぐ。なつに すずしい おとが するよ。", romaji: "furin" },
+  { name: "せんぷうき", season: "", category: "tool", hint: "はねを まわして かぜを おくる きかい。なつに すずしいよ。", romaji: "senpuki" },
   { name: "しめかざり", season: "winter", category: "event", hint: "おしょうがつ に げんかん に かざるよ。わらで できた わ に みかん が のってるよ。", romaji: "shimekazari" },
-  { name: "ホッチキス", season: "", category: "tool", hint: "", romaji: "hotchikisu" },
-  { name: "ほういじしゃく", season: "", category: "tool", hint: "", romaji: "houijishaku" },
-  { name: "じょうろ", season: "", category: "tool", hint: "", romaji: "jouro" },
-  { name: "ライター", season: "", category: "tool", hint: "", romaji: "raitaa" },
-  { name: "マッチ", season: "", category: "tool", hint: "", romaji: "matchi" },
-  { name: "せんす", season: "", category: "tool", hint: "", romaji: "sensu" },
-  { name: "かとりせんこう", season: "", category: "tool", hint: "", romaji: "katorisenko" },
-  { name: "こけし", season: "", category: "tool", hint: "", romaji: "kokeshi" },
-  { name: "ペンチ", season: "", category: "tool", hint: "", romaji: "penchi" },
-  { name: "ちりとり", season: "", category: "tool", hint: "", romaji: "chiritori" },
-  { name: "カッター", season: "", category: "tool", hint: "", romaji: "kattaa" },
-  { name: "アイロン", season: "", category: "tool", hint: "", romaji: "airon" },
-  { name: "ミシン", season: "", category: "tool", hint: "", romaji: "mishin" },
-  { name: "まんねんひつ", season: "", category: "tool", hint: "", romaji: "mannenhitsu" },
-  { name: "なべ", season: "", category: "tool", hint: "", romaji: "nabe" },
-  { name: "フライパン", season: "", category: "tool", hint: "", romaji: "furaipan" },
-  { name: "おたま", season: "", category: "tool", hint: "", romaji: "otama" },
-  { name: "しゃもじ", season: "", category: "tool", hint: "", romaji: "shamoji" },
-  { name: "めんぼう", season: "", category: "tool", hint: "", romaji: "menbou" },
-  { name: "ざる", season: "", category: "tool", hint: "", romaji: "zaru" },
-  { name: "すりこぎ", season: "", category: "tool", hint: "", romaji: "surikogi" },
-  { name: "すりばち", season: "", category: "tool", hint: "", romaji: "suribachi" },
-  { name: "ポット", season: "", category: "tool", hint: "", romaji: "potto" },
-  { name: "はかり", season: "", category: "tool", hint: "", romaji: "hakari" },
-  { name: "せんたくばさみ", season: "", category: "tool", hint: "", romaji: "sentakubasami" },
-  { name: "たいおんけい", season: "", category: "tool", hint: "", romaji: "taionkei" },
-  { name: "かぎ", season: "", category: "tool", hint: "", romaji: "kagi" },
-  { name: "ドライヤー", season: "", category: "tool", hint: "", romaji: "doraiyaa" },
-  { name: "クレヨン", season: "", category: "tool", hint: "", romaji: "kureyon" },
-  { name: "ハンガー", season: "", category: "tool", hint: "", romaji: "hangaa" },
-  { name: "セロテープ", season: "", category: "tool", hint: "", romaji: "seroteepu" },
-  { name: "クリップ", season: "", category: "tool", hint: "", romaji: "kurippu" },
-  { name: "がびょう", season: "", category: "tool", hint: "", romaji: "gabyou" },
-  { name: "ホワイトボード", season: "", category: "tool", hint: "", romaji: "howaitoboodo" },
-  { name: "こくばん", season: "", category: "tool", hint: "", romaji: "kokuban" },
-  { name: "そろばん", season: "", category: "tool", hint: "", romaji: "soroban" },
-  { name: "ひばち", season: "", category: "tool", hint: "", romaji: "hibachi" },
-  { name: "ちょうちん", season: "", category: "tool", hint: "", romaji: "chouchin" },
-  { name: "わらじ", season: "", category: "tool", hint: "", romaji: "waraji" },
-  { name: "おてだま", season: "", category: "tool", hint: "", romaji: "ojami" },
-  { name: "たけとんぼ", season: "", category: "tool", hint: "", romaji: "taketombo" },
-  { name: "むぎわらぼうし", season: "", category: "tool", hint: "", romaji: "mugiwaraboushi" },
-  { name: "うきわ", season: "", category: "tool", hint: "", romaji: "ukiwa" },
-  { name: "かきごおり", season: "", category: "tool", hint: "", romaji: "kakigoori" },
-  { name: "どんぐり", season: "", category: "tool", hint: "", romaji: "donguri" },
-  { name: "いね", season: "", category: "tool", hint: "", romaji: "ine" },
-  { name: "てぶくろ", season: "", category: "tool", hint: "", romaji: "tebukuro" },
+  { name: "ホッチキス", season: "", category: "tool", hint: "かみを はりで とめる どうぐ。がちゃん って おすよ。", romaji: "hotchikisu" },
+  { name: "ほういじしゃく", season: "", category: "tool", hint: "きたと みなみの ほうがくを しらべる どうぐ。はりが きたを さすよ。", romaji: "houijishaku" },
+  { name: "じょうろ", season: "", category: "tool", hint: "おはなや やさいに みずを あげる どうぐ。", romaji: "jouro" },
+  { name: "ライター", season: "", category: "tool", hint: "ひを つける どうぐ。おとなが つかうよ。こども は さわっちゃ だめ。", romaji: "raitaa" },
+  { name: "マッチ", season: "", category: "tool", hint: "こすって ひを つける どうぐ。おとなが つかうよ。", romaji: "matchi" },
+  { name: "せんす", season: "", category: "tool", hint: "おって たたんで あおぐ どうぐ。ひらくと おうぎの かたち。", romaji: "sensu" },
+  { name: "かとりせんこう", season: "", category: "tool", hint: "けむりで かを よける どうぐ。なつに つかうよ。ぐるぐる の かたち。", romaji: "katorisenko" },
+  { name: "こけし", season: "", category: "tool", hint: "きで できた にんぎょう。まるい あたまで かわいいよ。", romaji: "kokeshi" },
+  { name: "ペンチ", season: "", category: "tool", hint: "はりがねを まげたり きったり する どうぐ。", romaji: "penchi" },
+  { name: "ちりとり", season: "", category: "tool", hint: "ほうきで あつめた ごみを すくう どうぐ。", romaji: "chiritori" },
+  { name: "カッター", season: "", category: "tool", hint: "かみや だんボールを きる どうぐ。は が するどいよ。", romaji: "kattaa" },
+  { name: "アイロン", season: "", category: "tool", hint: "ふくの しわを のばす どうぐ。あつく なるよ。", romaji: "airon" },
+  { name: "ミシン", season: "", category: "tool", hint: "ぬのを ぬう きかい。がたがた うごいて ぬってくれるよ。", romaji: "mishin" },
+  { name: "まんねんひつ", season: "", category: "tool", hint: "インクで じを かく どうぐ。ペンさき が とがってるよ。", romaji: "mannenhitsu" },
+  { name: "なべ", season: "", category: "tool", hint: "りょうりを にたり ゆでたり する どうぐ。", romaji: "nabe" },
+  { name: "フライパン", season: "", category: "tool", hint: "たべものを やいたり いためたり する どうぐ。", romaji: "furaipan" },
+  { name: "おたま", season: "", category: "tool", hint: "スープや みそしるを すくう どうぐ。まるい かたち。", romaji: "otama" },
+  { name: "しゃもじ", season: "", category: "tool", hint: "ごはんを よそう どうぐ。しろくて ひらべったいよ。", romaji: "shamoji" },
+  { name: "めんぼう", season: "", category: "tool", hint: "きじを うすく のばす ときに ころころ する どうぐ。", romaji: "menbou" },
+  { name: "ざる", season: "", category: "tool", hint: "みずを きる どうぐ。あなが たくさん あいてるよ。", romaji: "zaru" },
+  { name: "すりこぎ", season: "", category: "tool", hint: "すりばちの なかで ごまを する ぼうの どうぐ。", romaji: "surikogi" },
+  { name: "すりばち", season: "", category: "tool", hint: "なかに みぞがある うつわ。ごまを すったり するよ。", romaji: "suribachi" },
+  { name: "ポット", season: "", category: "tool", hint: "おゆを あたたかい まま いれておく どうぐ。", romaji: "potto" },
+  { name: "はかり", season: "", category: "tool", hint: "おもさを はかる どうぐ。りょうりや おかいものに つかうよ。", romaji: "hakari" },
+  { name: "せんたくばさみ", season: "", category: "tool", hint: "せんたくものを ほす ときに はさむ どうぐ。", romaji: "sentakubasami" },
+  { name: "たいおんけい", season: "", category: "tool", hint: "たいおんを はかる どうぐ。ねつが あるか しらべるよ。", romaji: "taionkei" },
+  { name: "かぎ", season: "", category: "tool", hint: "ドアに さして あけたり しめたり するよ。", romaji: "kagi" },
+  { name: "ドライヤー", season: "", category: "tool", hint: "かみの けを かわかす きかい。あたたかい かぜが でるよ。", romaji: "doraiyaa" },
+  { name: "クレヨン", season: "", category: "tool", hint: "いろを ぬったり え を かいたり する どうぐ。いろんな いろ が あるよ。", romaji: "kureyon" },
+  { name: "ハンガー", season: "", category: "tool", hint: "ふくを かけて しまう どうぐ。クローゼット に つかうよ。", romaji: "hangaa" },
+  { name: "セロテープ", season: "", category: "tool", hint: "かみを はったり する すきとおった テープ。", romaji: "seroteepu" },
+  { name: "クリップ", season: "", category: "tool", hint: "かみを まとめて とめる どうぐ。きんぞくで できてるよ。", romaji: "kurippu" },
+  { name: "がびょう", season: "", category: "tool", hint: "かべに かみを とめる どうぐ。するどい はりが あるよ。", romaji: "gabyou" },
+  { name: "ホワイトボード", season: "", category: "tool", hint: "ペンで かいて けせる しろい いた。", romaji: "howaitoboodo" },
+  { name: "こくばん", season: "", category: "tool", hint: "チョークで じを かく みどりや くろの いた。がっこうに あるよ。", romaji: "kokuban" },
+  { name: "そろばん", season: "", category: "tool", hint: "たまを うごかして けいさん する どうぐ。ぱちぱち なるよ。", romaji: "soroban" },
+  { name: "ひばち", season: "", category: "tool", hint: "すみを いれて あたたまる どうぐ。むかしの ストーブ だよ。", romaji: "hibachi" },
+  { name: "ちょうちん", season: "", category: "tool", hint: "なかに あかりが はいった かみの ランプ。おまつり で みるよ。", romaji: "chouchin" },
+  { name: "わらじ", season: "", category: "tool", hint: "わらで あんだ はきもの。むかしの ひとが はいたよ。", romaji: "waraji" },
+  { name: "おてだま", season: "", category: "tool", hint: "なかに あずきが はいった ぬのぶくろ。なげて あそぶよ。", romaji: "ojami" },
+  { name: "たけとんぼ", season: "", category: "tool", hint: "たけで つくった おもちゃ。てで まわすと そらに とぶよ。", romaji: "taketombo" },
+  { name: "むぎわらぼうし", season: "", category: "tool", hint: "むぎわらで つくった ぼうし。なつに ひよけ に かぶるよ。", romaji: "mugiwaraboushi" },
+  { name: "うきわ", season: "", category: "tool", hint: "みずに うく わっか。プールや うみで つかうよ。", romaji: "ukiwa" },
+  { name: "かきごおり", season: "", category: "tool", hint: "こおりを けずった つめたい おやつ。シロップ を かけるよ。", romaji: "kakigoori" },
+  { name: "どんぐり", season: "", category: "tool", hint: "きの みの こと。ころころ してて こまが つくれるよ。", romaji: "donguri" },
+  { name: "いね", season: "", category: "tool", hint: "おこめが できる しょくぶつ。たんぼで そだてるよ。", romaji: "ine" },
+  { name: "てぶくろ", season: "", category: "tool", hint: "てに はめて さむさ から まもる どうぐ。ふゆに つかうよ。", romaji: "tebukuro" },
 ];
 
 const SEASONS = [
@@ -5070,10 +5080,10 @@ function startShiritori() {
   const starters = getShiritoriStarters();
   const start = shuffle(starters)[0];
   shiriState = {
-    chain: [start], round: 1, totalRounds: 3,
+    chain: [start], round: 1, totalRounds: 5,
     correctSteps: 0, totalSteps: 0,
     allChains: [], usedStarters: new Set([start.name]),
-    correctItem: null,
+    correctItem: null, hintUsed: 0,
   };
   // Preload all images for shiritori
   preloadImages(DATA.map(d => d.name));
@@ -5116,7 +5126,7 @@ function renderShiritori() {
   container.innerHTML = `
     <div class="shiri-round-info">ラウンド ${shiriState.round} / ${shiriState.totalRounds}</div>
     ${chainHTML}
-    <button class="shiri-hint-btn" onclick="this.innerHTML='さいごの もじ は <strong>「${lastChar}」</strong>';this.classList.add('revealed');">ヒント 🔍</button>
+    <button class="shiri-hint-btn shiri-hint-hidden" id="shiri-hint-btn" onclick="shiriState.hintUsed++;this.innerHTML='さいごの もじ は <strong>「${lastChar}」</strong>';this.classList.add('revealed');">ヒント 🔍</button>
     <div class="shiri-question">つぎの え は どれ？</div>
     <div class="shiri-options" id="shiri-options">
       ${options.map(item => `
@@ -5126,6 +5136,11 @@ function renderShiritori() {
       `).join('')}
     </div>
   `;
+  // 5秒後にヒントボタンを表示
+  setTimeout(() => {
+    const hintBtn = document.getElementById('shiri-hint-btn');
+    if (hintBtn) { hintBtn.classList.remove('shiri-hint-hidden'); hintBtn.classList.add('shiri-hint-visible'); }
+  }, 5000);
 }
 
 function answerShiritori(btn) {
@@ -5195,7 +5210,10 @@ function buildCompletedChainHTML(chain) {
 
 function showShiritoriResult() {
   const pct = shiriState.totalSteps > 0 ? Math.round((shiriState.correctSteps / shiriState.totalSteps) * 100) : 0;
-  let earnedStars = pct === 100 ? 3 : pct >= 60 ? 2 : pct >= 40 ? 1 : 0;
+  let earnedStars = pct === 100 ? 5 : pct >= 80 ? 4 : pct >= 60 ? 3 : pct >= 40 ? 2 : pct > 0 ? 1 : 0;
+  // No-hint bonus: +2 stars if no hints used and at least 60% correct
+  const noHintBonus = (shiriState.hintUsed === 0 && pct >= 60) ? 2 : 0;
+  earnedStars += noHintBonus;
 
   // Mission system (staged bonuses)
   const missionBonus = recordGameType('shiritori');
@@ -5300,7 +5318,7 @@ function startShiriOrder() {
   Audio.ensureCtx();
   Audio.startBGM('quiz');
   shiriOrdState = {
-    round: 1, totalRounds: 3, chainLength: 4,
+    round: 1, totalRounds: 5, chainLength: 4,
     correctRounds: 0, totalTaps: 0, correctTaps: 0,
     allChains: [], usedNames: new Set(),
   };
@@ -5358,6 +5376,11 @@ function renderShiriOrder() {
     <button class="shiriord-hint-btn" id="${hintId}" onclick="revealShiriOrderHint(this)">ヒント 🔍</button>
     ${poolHTML}
   `;
+  // 5秒後にヒントボタンを表示
+  setTimeout(() => {
+    const hintBtn = document.getElementById(hintId);
+    if (hintBtn) { hintBtn.classList.add('shiriord-hint-visible'); }
+  }, 5000);
 }
 
 function revealShiriOrderHint(btn) {
@@ -5438,7 +5461,7 @@ function nextShiriOrderRound() {
 function showShiriOrderResult() {
   const s = shiriOrdState;
   const pct = s.totalTaps > 0 ? Math.round((s.correctTaps / s.totalTaps) * 100) : 0;
-  let earnedStars = s.correctRounds === s.totalRounds ? 3 : s.correctRounds >= 2 ? 2 : s.correctRounds >= 1 ? 1 : 0;
+  let earnedStars = s.correctRounds === s.totalRounds ? 5 : s.correctRounds >= 4 ? 4 : s.correctRounds >= 3 ? 3 : s.correctRounds >= 2 ? 2 : s.correctRounds >= 1 ? 1 : 0;
 
   // Mission system (staged bonuses)
   const missionBonus = recordGameType('shiriorder');
@@ -5464,7 +5487,7 @@ function showShiriOrderResult() {
 
   let emoji, title, message;
   if (s.correctRounds === s.totalRounds) { emoji = ic('emoji_events','ms-xxxl ms-star'); title = 'かんぺき！！'; message = 'ぜんぶ ノーミスで ならべた！'; }
-  else if (s.correctRounds >= 2) { emoji = ic('celebration','ms-xxxl'); title = 'よく できました！'; message = 'ならべかえ じょうず！'; }
+  else if (s.correctRounds >= 3) { emoji = ic('celebration','ms-xxxl'); title = 'よく できました！'; message = 'ならべかえ じょうず！'; }
   else { emoji = ic('fitness_center','ms-xxxl'); title = 'がんばったね！'; message = 'もう いちど ちゃれんじ しよう！'; }
 
   const badgeHTML = badgeUnlocked ? `<div style="background:#fff8e1;border:2px solid #ffd700;border-radius:16px;padding:16px;margin-bottom:16px;text-align:center;"><div style="font-size:2rem;">${newBadge.emoji}</div><div style="font-weight:800;font-size:1.1rem;margin-top:4px;">しょうごう ゲット！</div><div style="font-size:1.2rem;font-weight:700;color:#f57f17;">${newBadge.title}</div></div>` : '';
@@ -5598,7 +5621,7 @@ function beginMushitori() {
   container.style.touchAction = 'none';
 
   mushiState = {
-    timeLeft: 30,
+    timeLeft: 45,
     startTime: Date.now(),
     caught: 0,
     missed: 0,
@@ -5615,7 +5638,7 @@ function beginMushitori() {
   // Render field
   let html = '<div class="mushi-timer-bar"><div class="mushi-timer-fill" id="mushi-timer-fill" style="width:100%"></div></div>';
   html += `<div class="mushi-mission" id="mushi-mission">${mission.icon} ${mission.label}</div>`;
-  html += '<div class="mushi-info" style="top:70px;"><span class="mushi-timer-text" id="mushi-time">⏱ 30</span><span class="mushi-score-correct" id="mushi-correct">⭕ 0</span><span class="mushi-score-miss" id="mushi-miss">✕ 0</span></div>';
+  html += '<div class="mushi-info" style="top:70px;"><span class="mushi-timer-text" id="mushi-time">⏱ 45</span><span class="mushi-score-correct" id="mushi-correct">⭕ 0</span><span class="mushi-score-miss" id="mushi-miss">✕ 0</span></div>';
   html += '<div class="mushi-combo" id="mushi-combo"></div>';
 
   // Decorative elements per season
@@ -5652,13 +5675,13 @@ function beginMushitori() {
 function mushiTick() {
   if (!mushiState) return;
   const elapsed = (Date.now() - mushiState.startTime) / 1000;
-  const remaining = Math.max(0, 30 - elapsed);
+  const remaining = Math.max(0, 45 - elapsed);
   mushiState.timeLeft = remaining;
 
   const timeEl = document.getElementById('mushi-time');
   const fillEl = document.getElementById('mushi-timer-fill');
   if (timeEl) timeEl.textContent = `⏱ ${Math.ceil(remaining)}`;
-  if (fillEl) fillEl.style.width = `${(remaining / 30) * 100}%`;
+  if (fillEl) fillEl.style.width = `${(remaining / 45) * 100}%`;
 
   const now = Date.now();
 
@@ -5895,17 +5918,15 @@ function showMushitoriResult() {
 
   const score = mushiState.caughtItems.length;
   const missed = mushiState.missed;
-  // 1 star per 2 correct catches (capped at 8 base stars)
-  let earnedStars = Math.min(8, Math.floor(score / 2));
-  // Accuracy bonus: 0 misses = +2, 1 miss = +1
+  // 1 star per 4 correct catches (capped at 3 base stars)
+  let earnedStars = Math.min(3, Math.floor(score / 4));
+  // Accuracy bonus: 0 misses and 5+ catches = +1
   let accuracyBonus = 0;
-  if (score > 0 && missed === 0) { accuracyBonus = 2; }
-  else if (score >= 3 && missed <= 1) { accuracyBonus = 1; }
+  if (score >= 5 && missed === 0) { accuracyBonus = 1; }
   earnedStars += accuracyBonus;
-  // Combo bonus: scaled by streak
+  // Combo bonus: 10+ combo = +1
   let comboBonus = 0;
-  if (mushiState.maxCombo >= 8) { comboBonus = 2; }
-  else if (mushiState.maxCombo >= 5) { comboBonus = 1; }
+  if (mushiState.maxCombo >= 10) { comboBonus = 1; }
   earnedStars += comboBonus;
 
   // Mission system (staged bonuses)
