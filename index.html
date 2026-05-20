@@ -591,6 +591,7 @@ body {
 .quiz-cat-btn.event { background: #fff3e0; color: #e65100; }
 .quiz-cat-btn.food { background: #e8f5e9; color: #2e7d32; }
 .quiz-cat-btn.tool { background: #e3f2fd; color: #1565c0; }
+.quiz-cat-btn.animal { background: #fff8e1; color: #f57f17; }
 .quiz-cat-btn.all { background: linear-gradient(135deg, #fce4ec, #e8f5e9, #fff3e0); color: #333; }
 
 .quiz-diff-select { padding: 20px; text-align: center; }
@@ -3668,8 +3669,8 @@ function startMixQuiz() {
   const seasonTypes = ['season', 'oddone', 'nakamawake', 'reverse', 'season', 'oddone', 'reverse'];
   const toolTypes = ['name', 'image'];
   const questions = selected.map((item, i) => {
-    // Tool items can't use season-based questions — use name/image instead
-    if (item.category === 'tool') {
+    // Tool/Animal items can't use season-based questions — use name/image instead
+    if (item.category === 'tool' || item.category === 'animal') {
       const t = toolTypes[i % toolTypes.length];
       if (t === 'image') return { type: 'image', item: item };
       return { type: 'name', item: item };
@@ -3744,9 +3745,9 @@ function startFinalTest() {
 function generateNakamawakeQ() {
   const seasons = ['spring', 'summer', 'autumn', 'winter'];
   const targetSeason = seasons[Math.floor(Math.random() * seasons.length)];
-  const correctPool = shuffle(DATA.filter(d => d.season === targetSeason && d.category !== 'tool'));
+  const correctPool = shuffle(DATA.filter(d => d.season === targetSeason && d.category !== 'tool' && d.category !== 'animal'));
   const correct = correctPool.slice(0, 3);
-  const wrongPool = shuffle(DATA.filter(d => d.season !== targetSeason && d.category !== 'tool'));
+  const wrongPool = shuffle(DATA.filter(d => d.season !== targetSeason && d.category !== 'tool' && d.category !== 'animal'));
   const wrong = wrongPool.slice(0, 3);
   return {
     type: 'nakamawake',
@@ -3820,9 +3821,9 @@ function submitNakamawake() {
 
 // ===== IMAGE RENDERING =====
 // 白黒PNG対応済み
-const PNG_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","omochitsuki","furin","yukidaruma","sukeeto","kikyuu","minomushi","taka","washi","kujaku","imohori","shishimai","sukii","biwa","bonodori","hoozuki","nadeshiko","kashiwamochi","koinobori"]);
+const PNG_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","omochitsuki","furin","yukidaruma","sukeeto","kikyuu","minomushi","taka","washi","kujaku","imohori","shishimai","sukii","biwa","bonodori","hoozuki","nadeshiko","kashiwamochi","koinobori","kurippu"]);
 // カラーPNG対応済み
-const COLOR_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","ayame","fuji","hasu","dahlia","sazanka","poinsettia","kamakiri","dangomushi","katatsumuri","kumo","amenbo","tamanegi","kabocha","nashi","biwa","gobou","kabu","shiitake","asparagus","chichinohi","omochitsuki","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","furin","senpuki","shimekazari","hotchikisu","houijishaku","jouro","raitaa","matchi","sensu","katorisenko","kokeshi","penchi","chiritori","kattaa","airon","mishin","mannenhitsu","nabe","furaipan","otama","shamoji","menbou","zaru","surikogi","suribachi","potto","hakari","sentakubasami","taionkei","kagi","doraiyaa","kureyon","hangaa","seroteepu","gabyou","howaitoboodo","kokuban","soroban","hibachi","chouchin","waraji","ojami","taketombo","mugiwaraboushi","ukiwa","kakigoori","donguri","ine","tebukuro","yukidaruma","sukeeto","kikyuu","minomushi","taka","washi","kujaku","imohori","shishimai","sukii","bonodori","hoozuki","nadeshiko","kashiwamochi","koinobori"]);
+const COLOR_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","ayame","fuji","hasu","dahlia","sazanka","poinsettia","kamakiri","dangomushi","katatsumuri","kumo","amenbo","tamanegi","kabocha","nashi","biwa","gobou","kabu","shiitake","asparagus","chichinohi","omochitsuki","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","furin","senpuki","shimekazari","hotchikisu","houijishaku","jouro","raitaa","matchi","sensu","katorisenko","kokeshi","penchi","chiritori","kattaa","airon","mishin","mannenhitsu","nabe","furaipan","otama","shamoji","menbou","zaru","surikogi","suribachi","potto","hakari","sentakubasami","taionkei","kagi","doraiyaa","kureyon","hangaa","seroteepu","gabyou","howaitoboodo","kokuban","soroban","hibachi","chouchin","waraji","ojami","taketombo","mugiwaraboushi","ukiwa","kakigoori","donguri","ine","tebukuro","yukidaruma","sukeeto","kikyuu","minomushi","taka","washi","kujaku","imohori","shishimai","sukii","bonodori","hoozuki","nadeshiko","kashiwamochi","koinobori","kurippu"]);
 
 // 白黒SVG対応済み（PNGがないがSVGがあるもの）
 const SVG_READY = new Set(["ayame","fuji","hasu","dahlia","sazanka","poinsettia","kamakiri","dangomushi","katatsumuri","kumo","amenbo","tamanegi","kabocha","nashi","gobou","kabu","shiitake","asparagus","chichinohi"]);
@@ -4185,7 +4186,7 @@ function renderZukanGrid() {
   grid.innerHTML = '';
   const items = zukanFilter === 'all' ? DATA.filter(d => QUIZ_CATS.has(d.category)) : DATA.filter(d => d.category === zukanFilter);
 
-  const isTool = zukanFilter === 'tool';
+  const isTool = zukanFilter === 'tool' || zukanFilter === 'animal';
 
   if (isTool) {
     items.forEach(item => {
@@ -4230,7 +4231,7 @@ function renderZukanGrid() {
 function showDetail(item) {
   const overlay = document.getElementById('card-detail-overlay');
   const detail = document.getElementById('card-detail');
-  const seasonTag = item.category === 'tool' ? '' : `<span class="detail-season-tag season-${item.season}">${SEASON_EMOJI[item.season]} ${SEASON_NAMES[item.season]}</span>`;
+  const seasonTag = (item.category === 'tool' || item.category === 'animal') ? '' : `<span class="detail-season-tag season-${item.season}">${SEASON_EMOJI[item.season]} ${SEASON_NAMES[item.season]}</span>`;
   detail.innerHTML = `
     <div class="detail-icon">${getIcon(item.name, 'color')}</div>
     <div class="detail-name">${item.name}</div>
@@ -4271,12 +4272,13 @@ function renderQuizSelectContent() {
         <button class="quiz-cat-btn event" onclick="selectCategory('event')"><span class="ms">celebration</span> ぎょうじ</button>
         <button class="quiz-cat-btn food" onclick="selectCategory('food')"><span class="ms">nutrition</span> やさい・くだもの</button>
         <button class="quiz-cat-btn tool" onclick="selectCategory('tool')"><span class="ms">handyman</span> どうぐ</button>
+        <button class="quiz-cat-btn animal" onclick="selectCategory('animal')"><span class="ms">pets</span> どうぶつ</button>
         <button class="quiz-cat-btn all" onclick="selectCategory('all')"><span class="ms">apps</span> ぜんぶ</button>
       </div>
     `;
   } else {
-    const catNames = { flower: "はな", insect: "むし", event: "ぎょうじ", food: "やさい・くだもの", tool: "どうぐ", all: "ぜんぶ" };
-    const isTool = selectedCategory === 'tool';
+    const catNames = { flower: "はな", insect: "むし", event: "ぎょうじ", food: "やさい・くだもの", tool: "どうぐ", animal: "どうぶつ", all: "ぜんぶ" };
+    const isTool = selectedCategory === 'tool' || selectedCategory === 'animal';
     container.innerHTML = `
       <div class="quiz-diff-select">
         <div class="quiz-diff-title">むずかしさ は？</div>
@@ -4310,7 +4312,7 @@ function startQuiz(category, difficulty) {
   pool = shuffle(pool).slice(0, qCount);
 
   const questions = pool.map((item, i) => {
-    if (category === 'tool' || item.category === 'tool') {
+    if (category === 'tool' || category === 'animal' || item.category === 'tool' || item.category === 'animal') {
       // Tool quiz: name (image→name) and image (name→image) types only
       if (difficulty === 'easy') {
         return { type: 'name', item: item };
@@ -4356,7 +4358,7 @@ function startQuiz(category, difficulty) {
     maxStreak: 0,
   };
 
-  const catNames = { flower: "はな", insect: "むし", event: "ぎょうじ", food: "やさい・くだもの", tool: "どうぐ", all: "ぜんぶ" };
+  const catNames = { flower: "はな", insect: "むし", event: "ぎょうじ", food: "やさい・くだもの", tool: "どうぐ", animal: "どうぶつ", all: "ぜんぶ" };
   const diffNames = { easy: "かんたん", normal: "ふつう", hard: "むずかしい" };
   document.getElementById('quiz-header-title').textContent = catNames[category] + " " + diffNames[difficulty];
 
@@ -4511,8 +4513,8 @@ function renderQuizQuestion() {
     `;
   } else if (q.type === 'oddone') {
     // Odd one out: 3 items from same season + 1 from different season
-    const sameSeason = DATA.filter(d => d.season === q.item.season && d.name !== q.item.name && d.category !== 'tool');
-    const diffSeason = DATA.filter(d => d.season !== q.item.season && d.category !== 'tool');
+    const sameSeason = DATA.filter(d => d.season === q.item.season && d.name !== q.item.name && d.category !== 'tool' && d.category !== 'animal');
+    const diffSeason = DATA.filter(d => d.season !== q.item.season && d.category !== 'tool' && d.category !== 'animal');
     const sameItems = shuffle(sameSeason).slice(0, 3);
     const oddItem = shuffle(diffSeason)[0];
     const allItems = shuffle([...sameItems, oddItem]);
@@ -4985,7 +4987,7 @@ function showFlashCards(cat, season) {
   Audio.ensureCtx();
   Audio.startBGM('menu');
   if (cat !== undefined) fcState.filter = cat || 'all';
-  if (cat === 'tool') fcState.season = 'all';
+  if (cat === 'tool' || cat === 'animal') fcState.season = 'all';
   if (season !== undefined) fcState.season = season || 'all';
   let items = DATA.filter(d => QUIZ_CATS.has(d.category));
   if (fcState.filter !== 'all') items = items.filter(d => d.category === fcState.filter);
@@ -5013,7 +5015,7 @@ function renderFlashCard() {
     return `<button class="fc-tab ${fcState.filter === cat ? 'active' : ''}" onclick="showFlashCards('${cat}', undefined)">${labels[cat]}</button>`;
   }).join('');
 
-  const isToolFilter = fcState.filter === 'tool';
+  const isToolFilter = fcState.filter === 'tool' || fcState.filter === 'animal';
   const seasonTabHTML = isToolFilter ? '' : ['all','spring','summer','autumn','winter'].map(s => {
     const labels = { all: '🌐', spring: '🌸はる', summer: '☀️なつ', autumn: '🍂あき', winter: '❄️ふゆ' };
     return `<button class="fc-season-tab ${fcState.season === s ? 'active' : ''}" data-season="${s}" onclick="showFlashCards(undefined, '${s}')">${labels[s]}</button>`;
@@ -5029,7 +5031,7 @@ function renderFlashCard() {
     return;
   }
 
-  const backSeason = item.category === 'tool' ? '' : `<div class="fc-back-season">${SEASON_EMOJI[item.season]} ${SEASON_NAMES[item.season]}</div>`;
+  const backSeason = (item.category === 'tool' || item.category === 'animal') ? '' : `<div class="fc-back-season">${SEASON_EMOJI[item.season]} ${SEASON_NAMES[item.season]}</div>`;
   c.innerHTML = `
     <div class="fc-tabs">${tabHTML}</div>
     ${seasonTabHTML ? `<div class="fc-season-tabs">${seasonTabHTML}</div>` : ''}
@@ -5635,7 +5637,7 @@ function startMushitori() {
   document.getElementById('mushi-caught-display').textContent = '⭕ 0';
 
   // Preload images while player reads the start screen
-  preloadImages(DATA.filter(d => d.category !== 'tool').map(d => d.name));
+  preloadImages(DATA.filter(d => d.category !== 'tool' && d.category !== 'animal').map(d => d.name));
 }
 
 function beginMushitori() {
@@ -5782,8 +5784,8 @@ function spawnMushiBug() {
   // ~50% chance to spawn a correct item, ~50% wrong — ensures playability
   // If 3+ wrong items spawned in a row, force a correct one (ハズレ連続防止)
   const mission = mushiState.mission;
-  const correctPool = DATA.filter(d => isCorrectTap(d, mission) && d.category !== 'tool');
-  const wrongPool = DATA.filter(d => !isCorrectTap(d, mission) && d.category !== 'tool');
+  const correctPool = DATA.filter(d => isCorrectTap(d, mission) && d.category !== 'tool' && d.category !== 'animal');
+  const wrongPool = DATA.filter(d => !isCorrectTap(d, mission) && d.category !== 'tool' && d.category !== 'animal');
   const forceCorrect = mushiState.wrongStreak >= 3;
   const useCorrect = (forceCorrect || Math.random() < 0.45) && correctPool.length > 0;
   const pool = useCorrect ? correctPool : wrongPool;
@@ -5966,7 +5968,7 @@ function showMushitoriResult() {
   earnedStars += missionBonus;
 
   // Star thresholds for display messages
-  const correctPoolSize = DATA.filter(d => isCorrectTap(d, mushiState.mission) && d.category !== 'tool').length;
+  const correctPoolSize = DATA.filter(d => isCorrectTap(d, mushiState.mission) && d.category !== 'tool' && d.category !== 'animal').length;
   const t3 = Math.max(3, Math.min(8, Math.round(correctPoolSize * 0.5)));
   const t2 = Math.max(2, Math.round(t3 * 0.6));
   const t1 = Math.max(1, Math.round(t3 * 0.35));
