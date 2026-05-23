@@ -2046,6 +2046,10 @@ const IMG_MAP = {
   "かしわもち": "kashiwamochi", "こいのぼり": "koinobori",
   "いぬ": "inu", "ねこ": "neko", "うさぎ": "usagi", "くじら": "kujira",
   "いるか": "iruka", "こうもり": "koumori",
+  "らいおん": "raion", "きりん": "kirin", "かえる": "kaeru", "かめ": "kame",
+  "やもり": "yamori", "あざらし": "azarashi", "らっこ": "rakko",
+  "もぐら": "mogura", "はりねずみ": "harinezumi", "さめ": "same", "めだか": "medaka",
+  "にわとり": "niwatori", "カモノハシ": "kamonohashi", "ペンギン": "penguin", "ふくろう": "fukurou", "にんげん": "ningen",
 };
 
 
@@ -2276,15 +2280,26 @@ const DATA = [
   // むし
   { name: "みのむし", season: "autumn", category: "insect", hint: "はっぱや えだで ふくろを つくって なかに はいる むし。きから ぶらさがるよ。", romaji: "minomushi" },
   // どうぶつ（とり）
-  { name: "たか", season: "", category: "animal", hint: "そらを とぶ おおきな とり。するどい めで えものを みつけるよ。", romaji: "taka" },
-  { name: "わし", season: "", category: "animal", hint: "おおきくて つよい とり。あたまが しろい のが とくちょうだよ。", romaji: "washi" },
-  { name: "くじゃく", season: "", category: "animal", hint: "おおきくて きれいな はねを ひろげる とり。おすが はなやかだよ。", romaji: "kujaku" },
-  { name: "いぬ", season: "", category: "animal", hint: "ワンワンと なく。ひとに なつく どうぶつ。おさんぽが だいすき。", romaji: "inu" },
-  { name: "ねこ", season: "", category: "animal", hint: "ニャーと なく。やわらかい からだで たかい ところが すき。", romaji: "neko" },
-  { name: "うさぎ", season: "", category: "animal", hint: "ながい みみと まるい しっぽが とくちょう。ぴょんぴょん はねるよ。", romaji: "usagi" },
-  { name: "くじら", season: "", category: "animal", hint: "うみで いちばん おおきな どうぶつ。しおを ふく。さかな じゃないよ。", romaji: "kujira" },
-  { name: "いるか", season: "", category: "animal", hint: "うみで ジャンプする どうぶつ。あたまが よくて ひとに なつくよ。", romaji: "iruka" },
-  { name: "こうもり", season: "", category: "animal", hint: "よるに とぶ どうぶつ。とりに にてるけど ほにゅうるいだよ。", romaji: "koumori" },
+  { name: "たか", season: "", category: "animal", hint: "そらを とぶ おおきな とり。するどい めで えものを みつけるよ。", romaji: "taka", birthType: "卵生" },
+  { name: "わし", season: "", category: "animal", hint: "おおきくて つよい とり。あたまが しろい のが とくちょうだよ。", romaji: "washi", birthType: "卵生" },
+  { name: "くじゃく", season: "", category: "animal", hint: "おおきくて きれいな はねを ひろげる とり。おすが はなやかだよ。", romaji: "kujaku", birthType: "卵生" },
+  { name: "いぬ", season: "", category: "animal", hint: "ワンワンと なく。ひとに なつく どうぶつ。おさんぽが だいすき。", romaji: "inu", birthType: "胎生" },
+  { name: "ねこ", season: "", category: "animal", hint: "ニャーと なく。やわらかい からだで たかい ところが すき。", romaji: "neko", birthType: "胎生" },
+  { name: "うさぎ", season: "", category: "animal", hint: "ながい みみと まるい しっぽが とくちょう。ぴょんぴょん はねるよ。", romaji: "usagi", birthType: "胎生" },
+  { name: "くじら", season: "", category: "animal", hint: "うみで いちばん おおきな どうぶつ。しおを ふく。さかな じゃないよ。", romaji: "kujira", birthType: "胎生" },
+  { name: "いるか", season: "", category: "animal", hint: "うみで ジャンプする どうぶつ。あたまが よくて ひとに なつくよ。", romaji: "iruka", birthType: "胎生" },
+  { name: "こうもり", season: "", category: "animal", hint: "よるに とぶ どうぶつ。とりに にてるけど ほにゅうるいだよ。", romaji: "koumori", birthType: "胎生" },
+  { name: "らいおん", season: "", category: "animal", hint: "たてがみが りっぱな どうぶつの おう。ガオーと ほえるよ。", romaji: "raion", birthType: "胎生" },
+  { name: "きりん", season: "", category: "animal", hint: "せが とっても たかい どうぶつ。ながい くびで たかい きの はを たべるよ。", romaji: "kirin", birthType: "胎生" },
+  { name: "かえる", season: "", category: "animal", hint: "ケロケロ なく。おたまじゃくしから そだつよ。りょうせいるい。", romaji: "kaeru", birthType: "卵生" },
+  { name: "かめ", season: "", category: "animal", hint: "かたい こうらを もつ どうぶつ。ゆっくり あるくよ。はちゅうるい。", romaji: "kame", birthType: "卵生" },
+  { name: "やもり", season: "", category: "animal", hint: "かべに はりつく ちいさな はちゅうるい。いえを まもると いわれるよ。", romaji: "yamori", birthType: "卵生" },
+  { name: "あざらし", season: "", category: "animal", hint: "うみに すむ まるい どうぶつ。こおりの うえで ひなたぼっこ するよ。", romaji: "azarashi", birthType: "胎生" },
+  { name: "らっこ", season: "", category: "animal", hint: "うみで あおむけに ういて かいを おなかの うえで わるよ。", romaji: "rakko", birthType: "胎生" },
+  { name: "もぐら", season: "", category: "animal", hint: "つちの なかに トンネルを ほって くらす どうぶつ。めが ちいさいよ。", romaji: "mogura", birthType: "胎生" },
+  { name: "はりねずみ", season: "", category: "animal", hint: "せなかに たくさん トゲが ある どうぶつ。まるくなって みを まもるよ。", romaji: "harinezumi", birthType: "胎生" },
+  { name: "さめ", season: "", category: "animal", hint: "うみの つよい さかな。するどい はが たくさん あるよ。", romaji: "same", birthType: "卵生" },
+  { name: "めだか", season: "", category: "animal", hint: "ちいさな さかな。がっこうで かうことも あるよ。たまごを うむ。", romaji: "medaka", birthType: "卵生" },
 ];
 
 const SEASONS = [
@@ -3827,11 +3842,89 @@ function submitNakamawake() {
   }, isCorrect ? 1000 : 3500);
 }
 
+// ===== 胎生/卵生クイズ =====
+function generateBirthTypeQ() {
+  const types = ['胎生', '卵生'];
+  const targetType = types[Math.floor(Math.random() * types.length)];
+  const animals = DATA.filter(d => d.category === 'animal' && d.birthType);
+  const correctPool = shuffle(animals.filter(d => d.birthType === targetType));
+  const wrongPool = shuffle(animals.filter(d => d.birthType !== targetType));
+  const correct = correctPool.slice(0, 3);
+  const wrong = wrongPool.slice(0, 3);
+  return {
+    type: 'birthtype',
+    targetType: targetType,
+    items: shuffle([...correct, ...wrong]),
+    correctNames: new Set(correct.map(c => c.name)),
+  };
+}
+
+let birthtypeSelected = new Set();
+
+function toggleBirthType(btn, name) {
+  if (quizLocked) return;
+  if (birthtypeSelected.has(name)) {
+    birthtypeSelected.delete(name);
+    btn.classList.remove('selected');
+  } else {
+    birthtypeSelected.add(name);
+    btn.classList.add('selected');
+  }
+  document.querySelector('.nakamawake-submit').disabled = birthtypeSelected.size === 0;
+}
+
+function submitBirthType() {
+  if (quizLocked) return;
+  quizLocked = true;
+  const q = quizState.questions[quizState.current];
+  const correctNames = q.correctNames;
+
+  const allCorrectSelected = [...correctNames].every(n => birthtypeSelected.has(n));
+  const noWrongSelected = [...birthtypeSelected].every(n => correctNames.has(n));
+  const isCorrect = allCorrectSelected && noWrongSelected;
+
+  document.querySelectorAll('.nakamawake-option').forEach(btn => {
+    const name = btn.dataset.name;
+    if (correctNames.has(name)) btn.classList.add('correct-reveal');
+    else if (birthtypeSelected.has(name)) btn.classList.add('wrong-reveal');
+    const nameEl = document.createElement('span');
+    nameEl.className = 'opt-name-reveal';
+    nameEl.textContent = name;
+    btn.appendChild(nameEl);
+  });
+  document.querySelector('.nakamawake-submit').disabled = true;
+
+  if (isCorrect) {
+    Audio.sfx('correct');
+    quizState.score++;
+    quizState.streak++;
+    if (quizState.streak > quizState.maxStreak) quizState.maxStreak = quizState.streak;
+    document.getElementById('quiz-score-display').innerHTML = `${ic('star','ms-star')} ${quizState.score}`;
+    showToast('せいかい！');
+  } else {
+    Audio.sfx('wrong');
+    quizState.streak = 0;
+    showToast('おしい！');
+  }
+
+  quizState.answers.push(isCorrect);
+  for (const item of q.items) {
+    if (correctNames.has(item.name)) updateCatStat(item.category, isCorrect);
+  }
+
+  setTimeout(() => {
+    quizLocked = false;
+    quizState.current++;
+    if (quizState.current >= quizState.questions.length) showQuizResult();
+    else renderQuizQuestion();
+  }, isCorrect ? 1000 : 3500);
+}
+
 // ===== IMAGE RENDERING =====
 // 白黒PNG対応済み
-const PNG_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","omochitsuki","furin","yukidaruma","sukeeto","kikyuu","minomushi","taka","washi","kujaku","imohori","shishimai","sukii","biwa","bonodori","hoozuki","nadeshiko","kashiwamochi","koinobori","kurippu","inu","neko","usagi","kujira","iruka","koumori"]);
+const PNG_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","omochitsuki","furin","yukidaruma","sukeeto","kikyuu","minomushi","taka","washi","kujaku","imohori","shishimai","sukii","biwa","bonodori","hoozuki","nadeshiko","kashiwamochi","koinobori","kurippu","inu","neko","usagi","kujira","iruka","koumori","raion","kirin","kaeru","kame","yamori","azarashi","rakko","mogura","harinezumi","same","medaka"]);
 // カラーPNG対応済み
-const COLOR_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","ayame","fuji","hasu","dahlia","sazanka","poinsettia","kamakiri","dangomushi","katatsumuri","kumo","amenbo","tamanegi","kabocha","nashi","biwa","gobou","kabu","shiitake","asparagus","chichinohi","omochitsuki","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","furin","senpuki","shimekazari","hotchikisu","houijishaku","jouro","raitaa","matchi","sensu","katorisenko","kokeshi","penchi","chiritori","kattaa","airon","mishin","mannenhitsu","nabe","furaipan","otama","shamoji","menbou","zaru","surikogi","suribachi","potto","hakari","sentakubasami","taionkei","kagi","doraiyaa","kureyon","hangaa","seroteepu","gabyou","howaitoboodo","kokuban","soroban","hibachi","chouchin","waraji","ojami","taketombo","mugiwaraboushi","ukiwa","kakigoori","donguri","ine","tebukuro","yukidaruma","sukeeto","kikyuu","minomushi","taka","washi","kujaku","imohori","shishimai","sukii","bonodori","hoozuki","nadeshiko","kashiwamochi","koinobori","kurippu","inu","neko","usagi","kujira","iruka","koumori"]);
+const COLOR_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","ayame","fuji","hasu","dahlia","sazanka","poinsettia","kamakiri","dangomushi","katatsumuri","kumo","amenbo","tamanegi","kabocha","nashi","biwa","gobou","kabu","shiitake","asparagus","chichinohi","omochitsuki","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","furin","senpuki","shimekazari","hotchikisu","houijishaku","jouro","raitaa","matchi","sensu","katorisenko","kokeshi","penchi","chiritori","kattaa","airon","mishin","mannenhitsu","nabe","furaipan","otama","shamoji","menbou","zaru","surikogi","suribachi","potto","hakari","sentakubasami","taionkei","kagi","doraiyaa","kureyon","hangaa","seroteepu","gabyou","howaitoboodo","kokuban","soroban","hibachi","chouchin","waraji","ojami","taketombo","mugiwaraboushi","ukiwa","kakigoori","donguri","ine","tebukuro","yukidaruma","sukeeto","kikyuu","minomushi","taka","washi","kujaku","imohori","shishimai","sukii","bonodori","hoozuki","nadeshiko","kashiwamochi","koinobori","kurippu","inu","neko","usagi","kujira","iruka","koumori","raion","kirin","kaeru","kame","yamori","azarashi","rakko","mogura","harinezumi","same","medaka"]);
 
 // 白黒SVG対応済み（PNGがないがSVGがあるもの）
 const SVG_READY = new Set(["ayame","fuji","hasu","dahlia","sazanka","poinsettia","kamakiri","dangomushi","katatsumuri","kumo","amenbo","tamanegi","kabocha","nashi","gobou","kabu","shiitake","asparagus","chichinohi"]);
@@ -4240,11 +4333,12 @@ function showDetail(item) {
   const overlay = document.getElementById('card-detail-overlay');
   const detail = document.getElementById('card-detail');
   const seasonTag = (item.category === 'tool' || item.category === 'animal') ? '' : `<span class="detail-season-tag season-${item.season}">${SEASON_EMOJI[item.season]} ${SEASON_NAMES[item.season]}</span>`;
+  const birthTag = item.birthType ? `<span class="detail-season-tag" style="background:${item.birthType === '胎生' ? '#e91e63' : '#2196f3'};color:#fff">${item.birthType === '胎生' ? '🤱' : '🥚'} ${item.birthType}</span>` : '';
   detail.innerHTML = `
     <div class="detail-icon">${getIcon(item.name, 'color')}</div>
     <div class="detail-name">${item.name}</div>
     <div class="detail-romaji">${item.romaji}</div>
-    ${seasonTag}
+    ${seasonTag}${birthTag}
     ${item.hint ? `<div class="detail-hint">${item.hint}</div>` : ''}
     <button class="close-detail" onclick="closeDetailBtn()">とじる</button>
   `;
@@ -4286,21 +4380,25 @@ function renderQuizSelectContent() {
     `;
   } else {
     const catNames = { flower: "はな", insect: "むし", event: "ぎょうじ", food: "やさい・くだもの", tool: "どうぐ", animal: "どうぶつ", all: "ぜんぶ" };
-    const isTool = selectedCategory === 'tool' || selectedCategory === 'animal';
+    const isTool = selectedCategory === 'tool';
+    const isAnimal = selectedCategory === 'animal';
+    const easyDesc = isAnimal ? 'えを みて なまえを あてよう（5もん）' : isTool ? 'えを みて なまえを あてよう（5もん）' : 'えを みて きせつを あてよう（5もん）';
+    const normalDesc = isAnimal ? 'なまえあて ＋ たいせい・らんせい（5もん）' : isTool ? 'なまえあて ＋ えあて（5もん）' : 'きせつ ＋ なかまはずれ ＋ ヒント（5もん）';
+    const hardDesc = isAnimal ? 'なまえあて ＋ えあて ＋ たいせい・らんせい（7もん）' : isTool ? 'なまえあて ＋ えあて（7もん）' : 'なかまはずれ ＋ ヒント ＋ ぎゃく（7もん）';
     container.innerHTML = `
       <div class="quiz-diff-select">
         <div class="quiz-diff-title">むずかしさ は？</div>
         <button class="quiz-diff-btn easy" onclick="startQuiz('${selectedCategory}', 'easy')">
           <span class="ms ms-star">star</span> かんたん
-          <div class="quiz-diff-desc">${isTool ? 'えを みて なまえを あてよう（5もん）' : 'えを みて きせつを あてよう（5もん）'}</div>
+          <div class="quiz-diff-desc">${easyDesc}</div>
         </button>
         <button class="quiz-diff-btn normal" onclick="startQuiz('${selectedCategory}', 'normal')">
           <span class="ms ms-star">star</span><span class="ms ms-star">star</span> ふつう
-          <div class="quiz-diff-desc">${isTool ? 'なまえあて ＋ えあて（5もん）' : 'きせつ ＋ なかまはずれ ＋ ヒント（5もん）'}</div>
+          <div class="quiz-diff-desc">${normalDesc}</div>
         </button>
         <button class="quiz-diff-btn hard" onclick="startQuiz('${selectedCategory}', 'hard')">
           <span class="ms ms-star">star</span><span class="ms ms-star">star</span><span class="ms ms-star">star</span> むずかしい
-          <div class="quiz-diff-desc">${isTool ? 'なまえあて ＋ えあて（7もん）' : 'なかまはずれ ＋ ヒント ＋ ぎゃく（7もん）'}</div>
+          <div class="quiz-diff-desc">${hardDesc}</div>
         </button>
         <button class="quiz-diff-back" onclick="selectedCategory=null;renderQuizSelectContent()">← もどる</button>
       </div>
@@ -4320,7 +4418,7 @@ function startQuiz(category, difficulty) {
   pool = shuffle(pool).slice(0, qCount);
 
   const questions = pool.map((item, i) => {
-    if (category === 'tool' || category === 'animal' || item.category === 'tool' || item.category === 'animal') {
+    if (category === 'tool' || item.category === 'tool') {
       // Tool quiz: name (image→name) and image (name→image) types only
       if (difficulty === 'easy') {
         return { type: 'name', item: item };
@@ -4334,6 +4432,21 @@ function startQuiz(category, difficulty) {
         return types[i % types.length] === 'image'
           ? { type: 'image', item: item }
           : { type: 'name', item: item };
+      }
+    } else if (category === 'animal' || item.category === 'animal') {
+      // Animal quiz: name, image, + birthtype for normal/hard
+      if (difficulty === 'easy') {
+        return { type: 'name', item: item };
+      } else if (difficulty === 'hard') {
+        const types = ['name', 'image', 'birthtype', 'name', 'image', 'birthtype', 'name'];
+        const t = types[i % types.length];
+        if (t === 'birthtype') return generateBirthTypeQ();
+        return t === 'image' ? { type: 'image', item: item } : { type: 'name', item: item };
+      } else {
+        const types = ['name', 'image', 'birthtype', 'name', 'image'];
+        const t = types[i % types.length];
+        if (t === 'birthtype') return generateBirthTypeQ();
+        return t === 'image' ? { type: 'image', item: item } : { type: 'name', item: item };
       }
     } else if (difficulty === 'easy') {
       // Easy: image+hint → guess season
@@ -4566,6 +4679,27 @@ function renderQuizQuestion() {
       </div>
       <button class="nakamawake-submit" disabled onclick="submitNakamawake()">できた！</button>
     `;
+  } else if (q.type === 'birthtype') {
+    birthtypeSelected = new Set();
+    const typeLabel = q.targetType === '胎生' ? 'たいせい（おなかで そだつ）' : 'らんせい（たまごで うまれる）';
+    const typeEmoji = q.targetType === '胎生' ? '🤱' : '🥚';
+    area.innerHTML = `
+      ${streakHTML}
+      <div class="quiz-progress">${current} / ${total}</div>
+      <div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width:${(current/total)*100}%"></div></div>
+      <div class="quiz-question-card">
+        <div style="font-size:2.5rem;margin-bottom:8px;">${typeEmoji}</div>
+        <div class="quiz-question-text">${typeLabel} の どうぶつを ぜんぶ えらぼう！</div>
+      </div>
+      <div class="nakamawake-grid" id="quiz-options">
+        ${q.items.map(item => `
+          <button class="nakamawake-option" data-name="${item.name}" onclick="toggleBirthType(this, '${item.name}')">
+            <span class="opt-icon">${noAlt(getIcon(item.name, icoMode('color')))}</span>
+          </button>
+        `).join('')}
+      </div>
+      <button class="nakamawake-submit" disabled onclick="submitBirthType()">できた！</button>
+    `;
   } else {
     // Reverse: season → which item?
     const correctItem = q.correctItem;
@@ -4598,7 +4732,7 @@ function renderQuizQuestion() {
 }
 
 function getCatLabel(cat) {
-  return { flower: "はな は…", insect: "むし は…", event: "ぎょうじ は…", food: "やさい・くだもの は…", tool: "どうぐ は…" }[cat] || "";
+  return { flower: "はな は…", insect: "むし は…", event: "ぎょうじ は…", food: "やさい・くだもの は…", tool: "どうぐ は…", animal: "どうぶつ は…" }[cat] || "";
 }
 
 let quizLocked = false;
