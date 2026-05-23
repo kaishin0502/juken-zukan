@@ -2050,6 +2050,7 @@ const IMG_MAP = {
   "やもり": "yamori", "あざらし": "azarashi", "らっこ": "rakko",
   "もぐら": "mogura", "はりねずみ": "harinezumi", "さめ": "same", "めだか": "medaka",
   "にわとり": "niwatori", "カモノハシ": "kamonohashi", "ペンギン": "penguin", "ふくろう": "fukurou", "にんげん": "ningen",
+  "へび": "hebi", "うま": "uma", "うし": "ushi", "ぞう": "zou",
 };
 
 
@@ -2305,6 +2306,10 @@ const DATA = [
   { name: "ペンギン", season: "", category: "animal", hint: "とべない とり。こおりの うえを あるくよ。たまごを うむ。", romaji: "penguin", birthType: "卵生" },
   { name: "ふくろう", season: "", category: "animal", hint: "よるに かつどうする とり。くびが くるっと まわるよ。", romaji: "fukurou", birthType: "卵生" },
   { name: "にんげん", season: "", category: "animal", hint: "ぼくたち わたしたち！おかあさんの おなかで そだつよ。", romaji: "ningen", birthType: "胎生" },
+  { name: "へび", season: "", category: "animal", hint: "ながい からだ で にょろにょろ。あしが ない は虫類。たまごを うむよ。", romaji: "hebi", birthType: "卵生" },
+  { name: "うま", season: "", category: "animal", hint: "はやく はしれる おおきな どうぶつ。にんじんが すき。", romaji: "uma", birthType: "胎生" },
+  { name: "うし", season: "", category: "animal", hint: "モーと なく。ぎゅうにゅうを くれる どうぶつ。", romaji: "ushi", birthType: "胎生" },
+  { name: "ぞう", season: "", category: "animal", hint: "ながい はなと おおきな みみ。りくで いちばん おおきい どうぶつ。", romaji: "zou", birthType: "胎生" },
 ];
 
 const SEASONS = [
@@ -3927,9 +3932,9 @@ function submitBirthType() {
 
 // ===== IMAGE RENDERING =====
 // 白黒PNG対応済み
-const PNG_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","omochitsuki","furin","yukidaruma","sukeeto","kikyuu","minomushi","taka","washi","kujaku","imohori","shishimai","sukii","biwa","bonodori","hoozuki","nadeshiko","kashiwamochi","koinobori","kurippu","inu","neko","usagi","kujira","iruka","koumori","raion","kirin","kaeru","kame","yamori","azarashi","rakko","mogura","harinezumi","same","medaka","niwatori","kamonohashi","penguin","fukurou","ningen"]);
+const PNG_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","omochitsuki","furin","yukidaruma","sukeeto","kikyuu","minomushi","taka","washi","kujaku","imohori","shishimai","sukii","biwa","bonodori","hoozuki","nadeshiko","kashiwamochi","koinobori","kurippu","inu","neko","usagi","kujira","iruka","koumori","raion","kirin","kaeru","kame","yamori","azarashi","rakko","mogura","harinezumi","same","medaka","niwatori","kamonohashi","penguin","fukurou","ningen","hebi","uma","ushi","zou"]);
 // カラーPNG対応済み
-const COLOR_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","ayame","fuji","hasu","dahlia","sazanka","poinsettia","kamakiri","dangomushi","katatsumuri","kumo","amenbo","tamanegi","kabocha","nashi","biwa","gobou","kabu","shiitake","asparagus","chichinohi","omochitsuki","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","furin","senpuki","shimekazari","hotchikisu","houijishaku","jouro","raitaa","matchi","sensu","katorisenko","kokeshi","penchi","chiritori","kattaa","airon","mishin","mannenhitsu","nabe","furaipan","otama","shamoji","menbou","zaru","surikogi","suribachi","potto","hakari","sentakubasami","taionkei","kagi","doraiyaa","kureyon","hangaa","seroteepu","gabyou","howaitoboodo","kokuban","soroban","hibachi","chouchin","waraji","ojami","taketombo","mugiwaraboushi","ukiwa","kakigoori","donguri","ine","tebukuro","yukidaruma","sukeeto","kikyuu","minomushi","taka","washi","kujaku","imohori","shishimai","sukii","bonodori","hoozuki","nadeshiko","kashiwamochi","koinobori","kurippu","inu","neko","usagi","kujira","iruka","koumori","raion","kirin","kaeru","kame","yamori","azarashi","rakko","mogura","harinezumi","same","medaka","niwatori","kamonohashi","penguin","fukurou","ningen"]);
+const COLOR_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","ayame","fuji","hasu","dahlia","sazanka","poinsettia","kamakiri","dangomushi","katatsumuri","kumo","amenbo","tamanegi","kabocha","nashi","biwa","gobou","kabu","shiitake","asparagus","chichinohi","omochitsuki","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","furin","senpuki","shimekazari","hotchikisu","houijishaku","jouro","raitaa","matchi","sensu","katorisenko","kokeshi","penchi","chiritori","kattaa","airon","mishin","mannenhitsu","nabe","furaipan","otama","shamoji","menbou","zaru","surikogi","suribachi","potto","hakari","sentakubasami","taionkei","kagi","doraiyaa","kureyon","hangaa","seroteepu","gabyou","howaitoboodo","kokuban","soroban","hibachi","chouchin","waraji","ojami","taketombo","mugiwaraboushi","ukiwa","kakigoori","donguri","ine","tebukuro","yukidaruma","sukeeto","kikyuu","minomushi","taka","washi","kujaku","imohori","shishimai","sukii","bonodori","hoozuki","nadeshiko","kashiwamochi","koinobori","kurippu","inu","neko","usagi","kujira","iruka","koumori","raion","kirin","kaeru","kame","yamori","azarashi","rakko","mogura","harinezumi","same","medaka","niwatori","kamonohashi","penguin","fukurou","ningen","hebi","uma","ushi","zou"]);
 
 // 白黒SVG対応済み（PNGがないがSVGがあるもの）
 const SVG_READY = new Set(["ayame","fuji","hasu","dahlia","sazanka","poinsettia","kamakiri","dangomushi","katatsumuri","kumo","amenbo","tamanegi","kabocha","nashi","gobou","kabu","shiitake","asparagus","chichinohi"]);
@@ -4387,9 +4392,9 @@ function renderQuizSelectContent() {
     const catNames = { flower: "はな", insect: "むし", event: "ぎょうじ", food: "やさい・くだもの", tool: "どうぐ", animal: "どうぶつ", all: "ぜんぶ" };
     const isTool = selectedCategory === 'tool';
     const isAnimal = selectedCategory === 'animal';
-    const easyDesc = isAnimal ? 'えを みて なまえを あてよう（5もん）' : isTool ? 'えを みて なまえを あてよう（5もん）' : 'えを みて きせつを あてよう（5もん）';
-    const normalDesc = isAnimal ? 'なまえあて ＋ たいせい・らんせい（5もん）' : isTool ? 'なまえあて ＋ えあて（5もん）' : 'きせつ ＋ なかまはずれ ＋ ヒント（5もん）';
-    const hardDesc = isAnimal ? 'なまえあて ＋ えあて ＋ たいせい・らんせい（7もん）' : isTool ? 'なまえあて ＋ えあて（7もん）' : 'なかまはずれ ＋ ヒント ＋ ぎゃく（7もん）';
+    const easyDesc = isAnimal ? 'たいせい・らんせい クイズ（5もん）' : isTool ? 'えを みて なまえを あてよう（5もん）' : 'えを みて きせつを あてよう（5もん）';
+    const normalDesc = isAnimal ? 'たいせい・らんせい クイズ（5もん）' : isTool ? 'なまえあて ＋ えあて（5もん）' : 'きせつ ＋ なかまはずれ ＋ ヒント（5もん）';
+    const hardDesc = isAnimal ? 'たいせい・らんせい クイズ（7もん）' : isTool ? 'なまえあて ＋ えあて（7もん）' : 'なかまはずれ ＋ ヒント ＋ ぎゃく（7もん）';
     container.innerHTML = `
       <div class="quiz-diff-select">
         <div class="quiz-diff-title">むずかしさ は？</div>
@@ -4439,20 +4444,8 @@ function startQuiz(category, difficulty) {
           : { type: 'name', item: item };
       }
     } else if (category === 'animal' || item.category === 'animal') {
-      // Animal quiz: name, image, + birthtype for normal/hard
-      if (difficulty === 'easy') {
-        return { type: 'name', item: item };
-      } else if (difficulty === 'hard') {
-        const types = ['name', 'image', 'birthtype', 'name', 'image', 'birthtype', 'name'];
-        const t = types[i % types.length];
-        if (t === 'birthtype') return generateBirthTypeQ();
-        return t === 'image' ? { type: 'image', item: item } : { type: 'name', item: item };
-      } else {
-        const types = ['name', 'image', 'birthtype', 'name', 'image'];
-        const t = types[i % types.length];
-        if (t === 'birthtype') return generateBirthTypeQ();
-        return t === 'image' ? { type: 'image', item: item } : { type: 'name', item: item };
-      }
+      // Animal quiz: birthtype only (胎生/卵生クイズ)
+      return generateBirthTypeQ();
     } else if (difficulty === 'easy') {
       // Easy: image+hint → guess season
       return { type: 'season', item: item, showHint: true };
