@@ -1994,6 +1994,8 @@ const IMG_MAP = {
   "たまねぎ": "tamanegi", "かぼちゃ": "kabocha", "なし": "nashi",
   "びわ": "biwa", "ごぼう": "gobou", "かぶ": "kabu",
   "しいたけ": "shiitake", "アスパラガス": "asparagus",
+  "にんじん": "ninjin", "じゃがいも": "jagaimo", "れんこん": "renkon",
+  "ピーマン": "piiman", "えだまめ": "edamame", "バナナ": "banana",
   "ちちのひ": "chichinohi", "おもちつき": "omochitsuki",
   // どうぐ（しりとり・ならべかえ専用）
   "うちわ": "uchiwa", "ふろしき": "furoshiki", "こま": "koma",
@@ -2161,6 +2163,7 @@ const DATA = [
   { name: "そらまめ", season: "spring", category: "food", hint: "おおきな さや の なかに はいっている まめ。そら を むいて なるよ。", romaji: "soramame" },
   { name: "たまねぎ", season: "spring", category: "food", hint: "まるくて かわ を むくと なみだ が でるよ。カレー に いれるよ。", romaji: "tamanegi" },
   { name: "アスパラガス", season: "spring", category: "food", hint: "ながくて みどりの やさい。にょきにょき のびるよ。", romaji: "asparagus" },
+  { name: "じゃがいも", season: "spring", category: "food", hint: "つち の なかに できる まるい やさい。カレー や にくじゃが に いれるよ。", romaji: "jagaimo" },
 
   // === SUMMER FOOD ===
   { name: "トマト", season: "summer", category: "food", hint: "あかくて まるい やさい。サラダ に よく いれるよ。", romaji: "tomato" },
@@ -2169,6 +2172,9 @@ const DATA = [
   { name: "すいか", season: "summer", category: "food", hint: "おおきくて みどりの しましま。なかは あかくて あまいよ。", romaji: "suika" },
   { name: "とうもろこし", season: "summer", category: "food", hint: "きいろい つぶつぶ が いっぱい。やきとうもろこし は おいしいよ。", romaji: "corn" },
   { name: "もも", season: "summer", category: "food", hint: "ピンクで やわらかい くだもの。あまい いいかおり がするよ。", romaji: "momo" },
+  { name: "ピーマン", season: "summer", category: "food", hint: "みどりの やさい。にがい けど えいよう たっぷり だよ。", romaji: "piiman" },
+  { name: "えだまめ", season: "summer", category: "food", hint: "みどりの まめ。さや ごと ゆでて たべるよ。なつ の おやつ！", romaji: "edamame" },
+  { name: "バナナ", season: "summer", category: "food", hint: "きいろくて ながい くだもの。かわ を むいて たべるよ。おさる が すきだよ。", romaji: "banana" },
   { name: "びわ", season: "summer", category: "food", hint: "オレンジいろ の ちいさな くだもの。おおきな たね が はいってるよ。", romaji: "biwa" },
 
   // === AUTUMN FOOD ===
@@ -2180,6 +2186,7 @@ const DATA = [
   { name: "かぼちゃ", season: "autumn", category: "food", hint: "オレンジいろ の おおきな やさい。ハロウィン で おばけ の かお を つくるよ。", romaji: "kabocha" },
   { name: "なし", season: "autumn", category: "food", hint: "まるくて みずみずしい くだもの。シャリシャリ おいしいよ。", romaji: "nashi" },
   { name: "しいたけ", season: "autumn", category: "food", hint: "かさ が ひらいた きのこ。まるた で そだてるよ。", romaji: "shiitake" },
+  { name: "れんこん", season: "autumn", category: "food", hint: "つち の なかに できる やさい。きると あなが たくさん あいてるよ。", romaji: "renkon" },
 
   // === WINTER FOOD ===
   { name: "みかん", season: "winter", category: "food", hint: "オレンジいろ の まるい くだもの。てで かわを むけるよ。", romaji: "mikan" },
@@ -2189,6 +2196,7 @@ const DATA = [
   { name: "ブロッコリー", season: "winter", category: "food", hint: "みどりの もこもこ した やさい。きの かたち に にてるよ。", romaji: "broccoli" },
   { name: "ごぼう", season: "winter", category: "food", hint: "つち の なかに できる ながい やさい。きんぴら が おいしいよ。", romaji: "gobou" },
   { name: "かぶ", season: "winter", category: "food", hint: "しろくて まるい やさい。はっぱ も たべられるよ。おおきな かぶ の おはなし が あるよ。", romaji: "kabu" },
+  { name: "にんじん", season: "winter", category: "food", hint: "オレンジいろ の ながい やさい。つち の なかに できるよ。うさぎ が すきだよ。", romaji: "ninjin" },
 
   // === TOOLS (しりとり・ならべかえ専用) ===
   { name: "うちわ", season: "", category: "tool", hint: "あおいで かぜを おこす どうぐ。なつ に すずしく なるよ。", romaji: "uchiwa" },
@@ -3932,9 +3940,9 @@ function submitBirthType() {
 
 // ===== IMAGE RENDERING =====
 // 白黒PNG対応済み
-const PNG_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","omochitsuki","furin","yukidaruma","sukeeto","kikyuu","minomushi","taka","washi","kujaku","imohori","shishimai","sukii","biwa","bonodori","hoozuki","nadeshiko","kashiwamochi","koinobori","kurippu","inu","neko","usagi","kujira","iruka","koumori","raion","kirin","kaeru","kame","yamori","azarashi","rakko","mogura","harinezumi","same","medaka","niwatori","kamonohashi","penguin","fukurou","ningen","hebi","uma","ushi","zou"]);
+const PNG_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","omochitsuki","furin","yukidaruma","sukeeto","kikyuu","minomushi","taka","washi","kujaku","imohori","shishimai","sukii","biwa","bonodori","hoozuki","nadeshiko","kashiwamochi","koinobori","kurippu","inu","neko","usagi","kujira","iruka","koumori","raion","kirin","kaeru","kame","yamori","azarashi","rakko","mogura","harinezumi","same","medaka","niwatori","kamonohashi","penguin","fukurou","ningen","hebi","uma","ushi","zou","ninjin","jagaimo","renkon","piiman","edamame","banana"]);
 // カラーPNG対応済み
-const COLOR_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","ayame","fuji","hasu","dahlia","sazanka","poinsettia","kamakiri","dangomushi","katatsumuri","kumo","amenbo","tamanegi","kabocha","nashi","biwa","gobou","kabu","shiitake","asparagus","chichinohi","omochitsuki","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","furin","senpuki","shimekazari","hotchikisu","houijishaku","jouro","raitaa","matchi","sensu","katorisenko","kokeshi","penchi","chiritori","kattaa","airon","mishin","mannenhitsu","nabe","furaipan","otama","shamoji","menbou","zaru","surikogi","suribachi","potto","hakari","sentakubasami","taionkei","kagi","doraiyaa","kureyon","hangaa","seroteepu","gabyou","howaitoboodo","kokuban","soroban","hibachi","chouchin","waraji","ojami","taketombo","mugiwaraboushi","ukiwa","kakigoori","donguri","ine","tebukuro","yukidaruma","sukeeto","kikyuu","minomushi","taka","washi","kujaku","imohori","shishimai","sukii","bonodori","hoozuki","nadeshiko","kashiwamochi","koinobori","kurippu","inu","neko","usagi","kujira","iruka","koumori","raion","kirin","kaeru","kame","yamori","azarashi","rakko","mogura","harinezumi","same","medaka","niwatori","kamonohashi","penguin","fukurou","ningen","hebi","uma","ushi","zou"]);
+const COLOR_READY = new Set(["sakura","tulip","tanpopo","nanohana","tsutsuji","sumire","carnation","pansy","clover","renge","himawari","asagao","cosmos","kiku","ajisai","yuri","kinmokusei","higanbana","tsubaki","ume","suisen","cyclamen","chocho","tentomushi","mitsubachi","ari","kabutomushi","kuwagata","semi","hotaru","tonbo","suzumushi","korogi","batta","hinamatsuri","setsubun","tanabata","oshogatsu","osechi","hagoita","kagamimochi","ohanami","kodomonohi","nyuugakushiki","hahanohi","hanabi","kaisuiyoku","suikawari","otsukimi","shichigosan","momijigari","halloween","christmas","yukiasobi","omisoka","obon","ichigo","takenoko","cabbage","sakuranbo","nasu","ringo","tomato","kyuri","soramame","suika","corn","momo","satsumaimo","kaki","budou","kuri","mikan","daikon","hakusai","hourensou","broccoli","ayame","fuji","hasu","dahlia","sazanka","poinsettia","kamakiri","dangomushi","katatsumuri","kumo","amenbo","tamanegi","kabocha","nashi","biwa","gobou","kabu","shiitake","asparagus","chichinohi","omochitsuki","uchiwa","furoshiki","koma","kendama","taiko","hasami","houki","baketsu","sukoppu","nokogiri","kanaduchi","fue","rappa","mushimegane","randoseru","enpitsu","kanna","geta","kasa","piano","karuta","fude","tako","origami","kyuusu","sutoobu","monosashi","konpasu","yakan","furin","senpuki","shimekazari","hotchikisu","houijishaku","jouro","raitaa","matchi","sensu","katorisenko","kokeshi","penchi","chiritori","kattaa","airon","mishin","mannenhitsu","nabe","furaipan","otama","shamoji","menbou","zaru","surikogi","suribachi","potto","hakari","sentakubasami","taionkei","kagi","doraiyaa","kureyon","hangaa","seroteepu","gabyou","howaitoboodo","kokuban","soroban","hibachi","chouchin","waraji","ojami","taketombo","mugiwaraboushi","ukiwa","kakigoori","donguri","ine","tebukuro","yukidaruma","sukeeto","kikyuu","minomushi","taka","washi","kujaku","imohori","shishimai","sukii","bonodori","hoozuki","nadeshiko","kashiwamochi","koinobori","kurippu","inu","neko","usagi","kujira","iruka","koumori","raion","kirin","kaeru","kame","yamori","azarashi","rakko","mogura","harinezumi","same","medaka","niwatori","kamonohashi","penguin","fukurou","ningen","hebi","uma","ushi","zou","ninjin","jagaimo","renkon","piiman","edamame","banana"]);
 
 // 白黒SVG対応済み（PNGがないがSVGがあるもの）
 const SVG_READY = new Set(["ayame","fuji","hasu","dahlia","sazanka","poinsettia","kamakiri","dangomushi","katatsumuri","kumo","amenbo","tamanegi","kabocha","nashi","gobou","kabu","shiitake","asparagus","chichinohi"]);
@@ -4392,9 +4400,9 @@ function renderQuizSelectContent() {
     const catNames = { flower: "はな", insect: "むし", event: "ぎょうじ", food: "やさい・くだもの", tool: "どうぐ", animal: "どうぶつ", all: "ぜんぶ" };
     const isTool = selectedCategory === 'tool';
     const isAnimal = selectedCategory === 'animal';
-    const easyDesc = isAnimal ? 'たいせい・らんせい クイズ（5もん）' : isTool ? 'えを みて なまえを あてよう（5もん）' : 'えを みて きせつを あてよう（5もん）';
-    const normalDesc = isAnimal ? 'たいせい・らんせい クイズ（5もん）' : isTool ? 'なまえあて ＋ えあて（5もん）' : 'きせつ ＋ なかまはずれ ＋ ヒント（5もん）';
-    const hardDesc = isAnimal ? 'たいせい・らんせい クイズ（7もん）' : isTool ? 'なまえあて ＋ えあて（7もん）' : 'なかまはずれ ＋ ヒント ＋ ぎゃく（7もん）';
+    const easyDesc = isAnimal ? 'あかちゃん・たまご クイズ（5もん）' : isTool ? 'えを みて なまえを あてよう（5もん）' : 'えを みて きせつを あてよう（5もん）';
+    const normalDesc = isAnimal ? 'あかちゃん・たまご クイズ（5もん）' : isTool ? 'なまえあて ＋ えあて（5もん）' : 'きせつ ＋ なかまはずれ ＋ ヒント（5もん）';
+    const hardDesc = isAnimal ? 'あかちゃん・たまご クイズ（7もん）' : isTool ? 'なまえあて ＋ えあて（7もん）' : 'なかまはずれ ＋ ヒント ＋ ぎゃく（7もん）';
     container.innerHTML = `
       <div class="quiz-diff-select">
         <div class="quiz-diff-title">むずかしさ は？</div>
@@ -4679,7 +4687,7 @@ function renderQuizQuestion() {
     `;
   } else if (q.type === 'birthtype') {
     birthtypeSelected = new Set();
-    const typeLabel = q.targetType === '胎生' ? 'たいせい（おなかで そだつ）' : 'らんせい（たまごで うまれる）';
+    const typeLabel = q.targetType === '胎生' ? 'あかちゃんで うまれる' : 'たまごで うまれる';
     const typeEmoji = q.targetType === '胎生' ? '🤱' : '🥚';
     area.innerHTML = `
       ${streakHTML}
